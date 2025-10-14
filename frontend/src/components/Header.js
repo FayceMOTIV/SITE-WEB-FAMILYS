@@ -16,17 +16,17 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-red-900/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 backdrop-blur-md border-b border-orange-500/30 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+            <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
               <span className="text-white font-bold text-xl">F</span>
             </div>
             <div className="flex flex-col">
               <span className="text-white font-bold text-xl tracking-tight">{restaurantInfo.name}</span>
-              <span className="text-red-500 text-xs font-medium">{restaurantInfo.tagline}</span>
+              <span className="text-orange-400 text-xs font-medium">{restaurantInfo.tagline}</span>
             </div>
           </Link>
 
