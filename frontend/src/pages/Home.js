@@ -151,14 +151,14 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {whyChooseUs.map((item) => (
               <Card key={item.id} className="bg-white/10 backdrop-blur-sm border-white/20 hover:border-orange-400 transition-all duration-300 group hover:shadow-2xl hover:shadow-orange-500/30">
-                <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    {item.icon === 'chef-hat' && <ChefHat className="text-white" size={36} />}
-                    {item.icon === 'clock' && <Clock className="text-white" size={36} />}
-                    {item.icon === 'star' && <Star className="text-white" size={36} />}
+                <CardContent className="p-6 sm:p-8 text-center">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    {item.icon === 'chef-hat' && <ChefHat className="text-white" size={28} />}
+                    {item.icon === 'clock' && <Clock className="text-white" size={28} />}
+                    {item.icon === 'star' && <Star className="text-white" size={28} />}
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-3">{item.title}</h3>
-                  <p className="text-gray-200">{item.description}</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{item.title}</h3>
+                  <p className="text-gray-200 text-sm sm:text-base">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
