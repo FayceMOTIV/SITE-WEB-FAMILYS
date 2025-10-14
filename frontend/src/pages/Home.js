@@ -22,17 +22,17 @@ const Home = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="inline-block mb-4 px-6 py-3 bg-gradient-to-r from-orange-500/30 to-red-600/30 border-2 border-orange-400 rounded-full backdrop-blur-sm">
-            <span className="text-orange-300 text-base font-bold tracking-wide">🔥 LE FAMILY'S</span>
+          <div className="inline-block mb-4 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-orange-500/30 to-red-600/30 border-2 border-orange-400 rounded-full backdrop-blur-sm">
+            <span className="text-orange-300 text-sm sm:text-base font-bold tracking-wide">🔥 LE FAMILY'S</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl px-2">
             Le goût qui <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">rassemble</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow-lg">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow-lg px-4">
             Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col gap-3 sm:gap-4 justify-center items-stretch px-4 sm:px-0 max-w-2xl mx-auto">
             <a
               href={restaurantInfo.orderLink}
               target="_blank"
