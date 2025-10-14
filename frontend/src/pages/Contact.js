@@ -8,16 +8,16 @@ const Contact = () => {
     <div className="min-h-screen bg-black pt-24 pb-16">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 px-2">
             Nous <span className="text-red-500">contacter</span>
           </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto px-4">
             Venez nous rendre visite ou contactez-nous pour toute question
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Contact Info */}
           <div className="space-y-6">
             {/* Address Card */}
