@@ -130,17 +130,17 @@ const Menu = () => {
             {/* Navigation Buttons */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white border-0 w-14 h-14 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center z-20"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white border-0 w-10 h-10 sm:w-14 sm:h-14 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center z-20"
               aria-label="Previous slide"
             >
-              <ChevronLeft size={28} />
+              <ChevronLeft size={20} className="sm:w-7 sm:h-7" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white border-0 w-14 h-14 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center z-20"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white border-0 w-10 h-10 sm:w-14 sm:h-14 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center z-20"
               aria-label="Next slide"
             >
-              <ChevronRight size={28} />
+              <ChevronRight size={20} className="sm:w-7 sm:h-7" />
             </button>
           </div>
 
