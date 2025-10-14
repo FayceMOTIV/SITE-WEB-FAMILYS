@@ -216,6 +216,51 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Hours Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-full mb-6 shadow-lg">
+                <Clock className="text-white" size={40} />
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-2">
+                Nos <span className="text-orange-400">Horaires</span>
+              </h2>
+              <p className="text-gray-300 text-base sm:text-lg px-4">
+                Ouvert 6 jours sur 7 pour vous régaler !
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 sm:p-8 border border-orange-500/30 shadow-2xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {restaurantInfo.hours.map((schedule, index) => (
+                  <div 
+                    key={index} 
+                    className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 ${
+                      schedule.hours === "Fermé" 
+                        ? 'bg-red-900/20 border border-red-500/30' 
+                        : 'bg-white/5 hover:bg-white/10 border border-transparent hover:border-orange-500/50'
+                    }`}
+                  >
+                    <span className={`font-semibold text-base sm:text-lg ${
+                      schedule.hours === "Fermé" ? 'text-red-400' : 'text-white'
+                    }`}>
+                      {schedule.day}
+                    </span>
+                    <span className={`font-bold text-sm sm:text-base ${
+                      schedule.hours === "Fermé" ? 'text-red-500' : 'text-orange-400'
+                    }`}>
+                      {schedule.hours}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* App Download Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="container mx-auto px-4">
