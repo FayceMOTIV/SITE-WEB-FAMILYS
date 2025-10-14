@@ -109,9 +109,9 @@ const Home = () => {
               
               <Card className="bg-gradient-to-br from-red-500 to-pink-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300">
                 <CardContent className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Sur place ou à la maison</h3>
+                  <h3 className="text-2xl font-bold mb-4">Livraison via Uber Eats</h3>
                   <p className="text-white/90 leading-relaxed">
-                    Commandez vos plats préférés en quelques clics et profitez de la cuisine du Family's où que vous soyez, avec la même qualité et la même générosité. Livraison rapide garantie !
+                    Envie de nos burgers et tacos chez vous ? Commandez sur Uber Eats et profitez de nos plats fraîchement préparés directement à votre porte. La même qualité, où que vous soyez !
                   </p>
                 </CardContent>
               </Card>
