@@ -11,13 +11,11 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">F</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-white font-bold text-xl">{restaurantInfo.name}</span>
-                <span className="text-orange-400 text-xs font-medium">{restaurantInfo.tagline}</span>
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+                alt="Family's Logo" 
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-sm mb-4 max-w-md">
               Fast food premium à Bourg-en-Bresse. Burgers maison, tacos, desserts et boissons. Commandez en ligne ou sur notre app.
