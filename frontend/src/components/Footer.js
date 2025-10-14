@@ -83,6 +83,12 @@ const Footer = () => {
                 <span>{restaurantInfo.address}</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-400 text-sm">
+                <Phone size={18} className="text-orange-400 flex-shrink-0" />
+                <a href={`tel:${restaurantInfo.phone.replace(/\s/g, '')}`} className="hover:text-orange-400 transition-colors duration-300">
+                  {restaurantInfo.phone}
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 text-gray-400 text-sm">
                 <Mail size={18} className="text-orange-400 flex-shrink-0" />
                 <a href={`mailto:${restaurantInfo.email}`} className="hover:text-orange-400 transition-colors duration-300">
                   {restaurantInfo.email}
