@@ -99,6 +99,14 @@ const Header = () => {
               >
                 Commander
               </a>
+              <a
+                href={restaurantInfo.uberEatsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2.5 bg-black border border-green-500 text-white font-semibold rounded-lg hover:bg-green-500 transition-all duration-300 text-center"
+              >
+                🚗 Uber Eats
+              </a>
             </div>
           </nav>
         )}
