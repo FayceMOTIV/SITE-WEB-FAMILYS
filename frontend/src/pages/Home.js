@@ -88,9 +88,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 px-2">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
                 Bien plus qu'un restaurant, <br className="hidden sm:block"/>
-                <span className="text-red-500">une vraie expérience conviviale</span>
+                <span className="text-red-600">une vraie expérience conviviale</span>
               </h2>
             </div>
             
