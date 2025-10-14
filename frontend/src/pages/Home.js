@@ -59,41 +59,67 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Signature Burgers Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+      {/* About Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Nos <span className="text-red-500">incontournables</span>
-            </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Découvrez nos burgers signature, préparés avec passion et des ingrédients frais
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {burgers.map((burger) => (
-              <Card key={burger.id} className="bg-gray-800 border-gray-700 overflow-hidden group hover:border-red-500 transition-all duration-300">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={burger.image}
-                    alt={burger.name}
-                    className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">{burger.name}</h3>
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">{burger.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-red-500 text-2xl font-bold">{burger.price}</span>
-                    <Button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transform group-hover:scale-105 transition-all duration-300">
-                      Commander
-                    </Button>
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Bien plus qu'un restaurant, <br/>
+                <span className="text-red-500">une vraie expérience conviviale</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <Card className="bg-gradient-to-br from-red-600 to-orange-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-red-500/50 transition-all duration-300">
+                <CardContent className="p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-4">Un lieu spacieux et accueillant</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    Avec ses 250 m² de salle chaleureusement décorée et une terrasse ensoleillée de 60 m², le Family's vous reçoit dans une ambiance détendue, idéale pour un déjeuner en semaine ou un dîner festif le week-end.
+                  </p>
                 </CardContent>
               </Card>
-            ))}
+              
+              <Card className="bg-gradient-to-br from-orange-500 to-yellow-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300">
+                <CardContent className="p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-4">Pensé pour petits et grands</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    Notre restaurant dispose d'une aire de jeux sécurisée et ludique pour les enfants, pour leur plus grand bonheur… et votre tranquillité. Un espace familial où tout le monde se sent bien.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-gradient-to-br from-yellow-500 to-red-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300">
+                <CardContent className="p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-4">Cuisine variée et généreuse</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    Plats maison, saveurs authentiques et portions généreuses sont la marque de fabrique du Family's. Ici, on se régale sans chichi, dans une ambiance conviviale où l'on se sent comme à la maison.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-gradient-to-br from-red-500 to-pink-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300">
+                <CardContent className="p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-4">Sur place ou à la maison</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    Commandez vos plats préférés en quelques clics et profitez de la cuisine du Family's où que vous soyez, avec la même qualité et la même générosité. Livraison rapide garantie !
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="text-center">
+              <a
+                href={restaurantInfo.orderLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white px-12 py-6 text-xl font-bold rounded-xl shadow-2xl shadow-red-600/50 transform hover:scale-105 transition-all duration-300">
+                  Découvrir notre menu complet
+                  <ArrowRight className="ml-3" size={24} />
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
