@@ -162,14 +162,14 @@ const Menu = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-3xl p-12 text-center shadow-2xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+        <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4 drop-shadow-lg px-2">
             Prêt à commander ?
           </h2>
-          <p className="text-white text-xl mb-8 max-w-2xl mx-auto drop-shadow">
+          <p className="text-white text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow px-4">
             Commandez en ligne, appelez-nous ou profitez de la livraison via Uber Eats
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col gap-3 sm:gap-4 justify-center items-stretch px-4 sm:px-0">
             <a
               href={restaurantInfo.orderLink}
               target="_blank"
