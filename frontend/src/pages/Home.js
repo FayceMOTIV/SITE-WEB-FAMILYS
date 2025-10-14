@@ -212,17 +212,17 @@ const Home = () => {
       </section>
 
       {/* App Download Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-3xl p-12 text-center shadow-2xl">
-            <Smartphone className="text-white mx-auto mb-6 drop-shadow-lg" size={56} />
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+          <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
+            <Smartphone className="text-white mx-auto mb-4 sm:mb-6 drop-shadow-lg" size={48} />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 drop-shadow-lg px-2">
               Téléchargez notre <span className="text-yellow-300">app</span>
             </h2>
-            <p className="text-white text-xl mb-8 max-w-2xl mx-auto drop-shadow">
+            <p className="text-white text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow px-4">
               Commandez plus rapidement et profitez d'offres exclusives
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
               <a
                 href={restaurantInfo.appLinks.ios}
                 target="_blank"
