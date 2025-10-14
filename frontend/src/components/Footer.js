@@ -79,12 +79,12 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-gray-400 text-sm">
-                <MapPin size={18} className="text-red-500 flex-shrink-0 mt-0.5" />
+                <MapPin size={18} className="text-orange-400 flex-shrink-0 mt-0.5" />
                 <span>{restaurantInfo.address}</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-400 text-sm">
-                <Mail size={18} className="text-red-500 flex-shrink-0" />
-                <a href={`mailto:${restaurantInfo.email}`} className="hover:text-red-500 transition-colors duration-300">
+                <Mail size={18} className="text-orange-400 flex-shrink-0" />
+                <a href={`mailto:${restaurantInfo.email}`} className="hover:text-orange-400 transition-colors duration-300">
                   {restaurantInfo.email}
                 </a>
               </li>
