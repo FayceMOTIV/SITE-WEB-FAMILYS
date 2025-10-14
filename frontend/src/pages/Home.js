@@ -84,7 +84,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-orange-50 to-amber-50 animate-on-scroll">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-amber-950 to-orange-900 animate-on-scroll">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
