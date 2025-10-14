@@ -142,7 +142,7 @@ export const whyChooseUs = [
   },
   {
     id: 3,
-    title: "4.8★ sur Google",
+    title: "4.3★ sur Google",
     description: "Des centaines d'avis clients satisfaits et fidèles",
     icon: "star"
   }
