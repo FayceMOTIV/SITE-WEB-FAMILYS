@@ -98,10 +98,10 @@ const Footer = () => {
             © 2025 {restaurantInfo.name}. Tous droits réservés.
           </p>
           <div className="flex space-x-6">
-            <Link to="/mentions-legales" className="text-gray-500 hover:text-red-500 text-sm transition-colors duration-300">
+            <Link to="/mentions-legales" className="text-gray-500 hover:text-orange-400 text-sm transition-colors duration-300">
               Mentions légales
             </Link>
-            <Link to="/cgv" className="text-gray-500 hover:text-red-500 text-sm transition-colors duration-300">
+            <Link to="/cgv" className="text-gray-500 hover:text-orange-400 text-sm transition-colors duration-300">
               CGV
             </Link>
           </div>
