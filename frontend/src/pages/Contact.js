@@ -10,9 +10,9 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 px-2">
-            Nous <span className="text-red-500">contacter</span>
+            Nous <span className="text-orange-400">contacter</span>
           </h1>
-          <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-orange-100 max-w-2xl mx-auto px-4">
             Venez nous rendre visite ou contactez-nous pour toute question
           </p>
         </div>
