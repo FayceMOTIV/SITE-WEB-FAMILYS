@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, Clock } from 'lucide-react';
+import { MapPin, Mail, Clock, Phone } from 'lucide-react';
 import { restaurantInfo } from '../data/mock';
 import { Card, CardContent } from '../components/ui/card';
 
