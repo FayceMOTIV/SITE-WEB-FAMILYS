@@ -167,18 +167,29 @@ const Menu = () => {
             Prêt à commander ?
           </h2>
           <p className="text-white text-xl mb-8 max-w-2xl mx-auto drop-shadow">
-            Passez votre commande en ligne et venez la récupérer ou profitez de notre service de livraison
+            Commandez sur place ou profitez de la livraison via Uber Eats
           </p>
-          <a
-            href={restaurantInfo.orderLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-white text-gray-900 hover:bg-yellow-300 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300">
-              Commander maintenant
-              <ArrowRight className="ml-3" size={24} />
-            </Button>
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href={restaurantInfo.orderLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-white text-gray-900 hover:bg-yellow-300 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300">
+                Commander sur place
+                <ArrowRight className="ml-3" size={24} />
+              </Button>
+            </a>
+            <a
+              href={restaurantInfo.uberEatsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-black border-2 border-green-500 text-white hover:bg-green-500 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-green-500/60 transform hover:scale-105 transition-all duration-300">
+                🚗 Livraison Uber Eats
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
