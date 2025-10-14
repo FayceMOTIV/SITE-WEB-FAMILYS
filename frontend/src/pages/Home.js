@@ -7,7 +7,7 @@ import { Card, CardContent } from '../components/ui/card';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
+    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950 pt-28 sm:pt-36 md:pt-40 lg:pt-44">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-950 via-red-950 to-amber-950">
         {/* Background Image with Overlay */}
