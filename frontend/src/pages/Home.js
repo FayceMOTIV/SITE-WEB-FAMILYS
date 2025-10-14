@@ -22,14 +22,14 @@ const Home = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="inline-block mb-4 px-4 py-2 bg-red-600/20 border border-red-600/50 rounded-full">
-            <span className="text-red-500 text-sm font-semibold tracking-wide">🔥 LE FAMILY'S</span>
+          <div className="inline-block mb-4 px-6 py-3 bg-gradient-to-r from-orange-500/30 to-red-600/30 border-2 border-orange-400 rounded-full backdrop-blur-sm">
+            <span className="text-orange-300 text-base font-bold tracking-wide">🔥 LE FAMILY'S</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
             Le goût qui <br />
-            <span className="text-red-500">rassemble</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">rassemble</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow-lg">
             Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -38,13 +38,13 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg shadow-red-600/50 transform hover:scale-105 transition-all duration-300">
+              <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-orange-600/60 transform hover:scale-105 transition-all duration-300">
                 Commander maintenant
-                <ArrowRight className="ml-2" size={20} />
+                <ArrowRight className="ml-2" size={24} />
               </Button>
             </a>
             <Link to="/menu">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button variant="outline" className="border-2 border-orange-400 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:border-transparent px-10 py-7 text-xl font-bold rounded-xl transition-all duration-300 backdrop-blur-sm">
                 Voir le menu
               </Button>
             </Link>
