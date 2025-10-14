@@ -167,7 +167,7 @@ const Menu = () => {
             Prêt à commander ?
           </h2>
           <p className="text-white text-xl mb-8 max-w-2xl mx-auto drop-shadow">
-            Commandez sur place ou profitez de la livraison via Uber Eats
+            Commandez en ligne, appelez-nous ou profitez de la livraison via Uber Eats
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
