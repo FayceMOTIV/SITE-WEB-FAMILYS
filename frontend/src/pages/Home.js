@@ -165,11 +165,12 @@ const Home = () => {
             </h2>
             <div className="flex items-center justify-center space-x-2 mb-4">
               <div className="flex space-x-1">
-                {[1, 2, 3, 4, 5].map((star) => (
+                {[1, 2, 3, 4].map((star) => (
                   <Star key={star} className="text-yellow-400 fill-yellow-400" size={28} />
                 ))}
+                <Star className="text-yellow-400 fill-yellow-400" size={28} style={{ clipPath: 'inset(0 70% 0 0)' }} />
               </div>
-              <span className="text-white text-2xl font-bold">4.8/5</span>
+              <span className="text-white text-2xl font-bold">4.3/5</span>
               <span className="text-gray-300">sur Google</span>
             </div>
           </div>
