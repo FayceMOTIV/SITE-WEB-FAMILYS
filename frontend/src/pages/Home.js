@@ -227,7 +227,7 @@ const Home = () => {
                 href={restaurantInfo.appLinks.ios}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-10 py-5 bg-white text-gray-900 font-bold text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
+                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-white text-gray-900 font-bold text-base sm:text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
               >
                 📱 App Store
               </a>
@@ -235,7 +235,7 @@ const Home = () => {
                 href={restaurantInfo.appLinks.android}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-10 py-5 bg-white text-gray-900 font-bold text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
+                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-white text-gray-900 font-bold text-base sm:text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
               >
                 📱 Google Play
               </a>
