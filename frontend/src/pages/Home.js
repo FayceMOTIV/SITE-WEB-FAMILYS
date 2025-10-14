@@ -9,15 +9,16 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-950 via-red-950 to-amber-950">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1634737119182-4d09e1305ba7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBidXJnZXJ8ZW58MHx8fHwxNzYwNDQxMjc3fDA&ixlib=rb-4.1.0&q=85"
             alt="Hero Burger"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-30"
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/90 via-red-950/80 to-amber-950/90"></div>
         </div>
 
         {/* Hero Content */}
