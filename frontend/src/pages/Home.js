@@ -9,26 +9,25 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950 pt-28 sm:pt-36 md:pt-40 lg:pt-44">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-950 via-red-950 to-amber-950">
+      <section className="relative bg-gradient-to-br from-orange-950 via-red-950 to-amber-950 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1634737119182-4d09e1305ba7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBidXJnZXJ8ZW58MHx8fHwxNzYwNDQxMjc3fDA&ixlib=rb-4.1.0&q=85"
             alt="Hero Burger"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-20"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/90 via-red-950/80 to-amber-950/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/90 via-red-950/85 to-amber-950/90"></div>
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center py-20 sm:py-24">
-          <div className="inline-block mb-6 sm:mb-8">
+        <div className="relative z-10 container mx-auto px-4 text-center py-12 sm:py-16">
+          <div className="inline-block mb-4 sm:mb-6">
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
               alt="Family's Logo" 
-              className="h-32 sm:h-40 md:h-56 lg:h-64 w-auto mx-auto drop-shadow-2xl animate-pulse"
-              style={{ animationDuration: '3s' }}
+              className="h-24 sm:h-32 md:h-40 w-auto mx-auto drop-shadow-2xl"
             />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl px-2">
