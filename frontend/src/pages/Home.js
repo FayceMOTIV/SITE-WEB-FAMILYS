@@ -125,25 +125,25 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-700">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Pourquoi choisir <span className="text-red-500">Le Family's</span> ?
+              Pourquoi choisir <span className="text-orange-400">Le Family's</span> ?
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {whyChooseUs.map((item) => (
-              <Card key={item.id} className="bg-gray-800 border-gray-700 hover:border-red-500 transition-all duration-300 group">
+              <Card key={item.id} className="bg-white/10 backdrop-blur-sm border-white/20 hover:border-orange-400 transition-all duration-300 group hover:shadow-2xl hover:shadow-orange-500/30">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-red-600 transition-colors duration-300">
-                    {item.icon === 'chef-hat' && <ChefHat className="text-red-500 group-hover:text-white" size={32} />}
-                    {item.icon === 'clock' && <Clock className="text-red-500 group-hover:text-white" size={32} />}
-                    {item.icon === 'star' && <Star className="text-red-500 group-hover:text-white" size={32} />}
+                  <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    {item.icon === 'chef-hat' && <ChefHat className="text-white" size={36} />}
+                    {item.icon === 'clock' && <Clock className="text-white" size={36} />}
+                    {item.icon === 'star' && <Star className="text-white" size={36} />}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">{item.title}</h3>
-                  <p className="text-gray-400">{item.description}</p>
+                  <p className="text-gray-200">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
