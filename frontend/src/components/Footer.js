@@ -5,7 +5,7 @@ import { restaurantInfo } from '../data/mock';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black border-t border-orange-500/30">
+    <footer className="bg-gradient-to-b from-amber-900 to-orange-950 border-t border-orange-500/50">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Description */}
