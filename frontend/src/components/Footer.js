@@ -5,18 +5,18 @@ import { restaurantInfo } from '../data/mock';
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-red-900/20">
+    <footer className="bg-gradient-to-b from-gray-900 to-black border-t border-orange-500/30">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-xl">F</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-bold text-xl">{restaurantInfo.name}</span>
-                <span className="text-red-500 text-xs font-medium">{restaurantInfo.tagline}</span>
+                <span className="text-orange-400 text-xs font-medium">{restaurantInfo.tagline}</span>
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-4 max-w-md">
