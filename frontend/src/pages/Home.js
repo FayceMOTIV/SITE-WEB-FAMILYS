@@ -32,15 +32,24 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow-lg">
             Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href={restaurantInfo.orderLink}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-orange-600/60 transform hover:scale-105 transition-all duration-300">
-                Commander maintenant
+                Commander sur place
                 <ArrowRight className="ml-2" size={24} />
+              </Button>
+            </a>
+            <a
+              href={restaurantInfo.uberEatsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-black border-2 border-green-500 text-white hover:bg-green-500 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-green-500/60 transform hover:scale-105 transition-all duration-300">
+                🚗 Livraison Uber Eats
               </Button>
             </a>
             <Link to="/menu">
