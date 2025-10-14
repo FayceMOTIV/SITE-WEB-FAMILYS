@@ -39,8 +39,16 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-orange-600/60 transform hover:scale-105 transition-all duration-300">
-                Commander sur place
+                Commander en ligne
                 <ArrowRight className="ml-2" size={24} />
+              </Button>
+            </a>
+            <a
+              href={`tel:${restaurantInfo.phone.replace(/\s/g, '')}`}
+              className="inline-block"
+            >
+              <Button className="bg-blue-600 border-2 border-blue-400 text-white hover:bg-blue-700 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-blue-600/60 transform hover:scale-105 transition-all duration-300">
+                📞 {restaurantInfo.phone}
               </Button>
             </a>
             <a
