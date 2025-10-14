@@ -96,6 +96,7 @@ const Menu = () => {
                       <img
                         src={menu.url}
                         alt={menu.title}
+                        loading="lazy"
                         className="w-full h-auto object-contain bg-gray-800 rounded-2xl transition-transform duration-700 group-hover:scale-105"
                       />
                       
