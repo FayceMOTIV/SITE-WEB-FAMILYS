@@ -196,14 +196,14 @@ const Home = () => {
       </section>
 
       {/* App Download Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+      <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-red-900/20 to-red-600/20 border border-red-600/30 rounded-2xl p-12 text-center">
-            <Smartphone className="text-red-500 mx-auto mb-6" size={48} />
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Téléchargez notre <span className="text-red-500">app</span>
+          <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-3xl p-12 text-center shadow-2xl">
+            <Smartphone className="text-white mx-auto mb-6 drop-shadow-lg" size={56} />
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+              Téléchargez notre <span className="text-yellow-300">app</span>
             </h2>
-            <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-white text-xl mb-8 max-w-2xl mx-auto drop-shadow">
               Commandez plus rapidement et profitez d'offres exclusives
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -211,17 +211,17 @@ const Home = () => {
                 href={restaurantInfo.appLinks.ios}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                className="px-10 py-5 bg-white text-gray-900 font-bold text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
               >
-                App Store
+                📱 App Store
               </a>
               <a
                 href={restaurantInfo.appLinks.android}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                className="px-10 py-5 bg-white text-gray-900 font-bold text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
               >
-                Google Play
+                📱 Google Play
               </a>
             </div>
           </div>
