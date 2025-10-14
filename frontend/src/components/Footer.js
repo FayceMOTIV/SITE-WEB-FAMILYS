@@ -27,7 +27,7 @@ const Footer = () => {
                 href={restaurantInfo.socialMedia.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-red-600 transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-br hover:from-orange-500 hover:to-red-600 transition-all duration-300 hover:scale-110"
               >
                 <Facebook size={20} />
               </a>
@@ -35,7 +35,7 @@ const Footer = () => {
                 href={restaurantInfo.socialMedia.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-red-600 transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-br hover:from-orange-500 hover:to-red-600 transition-all duration-300 hover:scale-110"
               >
                 <Instagram size={20} />
               </a>
