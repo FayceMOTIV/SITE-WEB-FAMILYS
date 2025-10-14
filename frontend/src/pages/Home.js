@@ -26,7 +26,7 @@ const Home = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
               alt="Family's Logo" 
-              className="h-24 sm:h-32 md:h-40 w-auto mx-auto drop-shadow-2xl animate-pulse"
+              className="h-32 sm:h-48 md:h-64 lg:h-72 w-auto mx-auto drop-shadow-2xl animate-pulse"
               style={{ animationDuration: '3s' }}
             />
           </div>
