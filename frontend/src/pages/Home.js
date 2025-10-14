@@ -22,12 +22,12 @@ const Home = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 text-center py-20 sm:py-24">
           <div className="inline-block mb-6 sm:mb-8">
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
               alt="Family's Logo" 
-              className="h-40 sm:h-56 md:h-80 lg:h-96 w-auto mx-auto drop-shadow-2xl animate-pulse"
+              className="h-32 sm:h-40 md:h-56 lg:h-64 w-auto mx-auto drop-shadow-2xl animate-pulse"
               style={{ animationDuration: '3s' }}
             />
           </div>
