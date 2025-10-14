@@ -152,7 +152,7 @@ export const restaurantInfo = {
   name: "LE FAMILY'S",
   tagline: "Le goût qui rassemble",
   address: "59 RUE DU 14 JUILLET 1789, 01000 BOURG EN BRESSE, FRANCE",
-  phone: "+33 4 XX XX XX XX",
+  phone: "04 74 52 60 82",
   email: "lefamilys01@gmail.com",
   hours: [
     { day: "Lundi", hours: "Fermé" },
