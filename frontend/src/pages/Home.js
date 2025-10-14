@@ -145,7 +145,7 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-800 to-gray-700">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-800 to-gray-700 animate-on-scroll">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-2">
