@@ -87,7 +87,7 @@ const Header = () => {
                 href={restaurantInfo.orderLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2.5 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300 text-center"
+                className="px-6 py-2.5 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 text-center"
               >
                 Commander
               </a>
