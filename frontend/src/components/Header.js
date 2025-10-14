@@ -16,7 +16,7 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 backdrop-blur-md border-b border-orange-500/30 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-amber-900 via-orange-900 to-amber-900 backdrop-blur-md border-b border-orange-500/50 shadow-2xl">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-28 sm:h-36 md:h-40 lg:h-44">
           {/* Logo */}
