@@ -119,7 +119,7 @@ const Menu = () => {
                     </div>
 
                     {/* Slide Number Indicator */}
-                    <div className="absolute top-6 right-6 bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
+                    <div className="absolute top-3 right-3 sm:top-6 sm:right-6 bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold shadow-lg z-10 text-sm sm:text-base">
                       {currentSlide + 1} / {menuImages.length}
                     </div>
                   </div>
