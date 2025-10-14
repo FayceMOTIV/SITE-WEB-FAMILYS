@@ -64,7 +64,7 @@ const Menu = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-24 pb-16">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
