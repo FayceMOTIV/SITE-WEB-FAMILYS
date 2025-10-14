@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 backdrop-blur-md border-b border-orange-500/30 shadow-lg">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24 sm:h-28 md:h-32">
+        <div className="flex items-center justify-between h-28 sm:h-36 md:h-40 lg:h-44">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group">
             <img 
