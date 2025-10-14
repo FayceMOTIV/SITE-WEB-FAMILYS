@@ -30,11 +30,11 @@ const Home = () => {
               style={{ animationDuration: '3s' }}
             />
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl px-2">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight drop-shadow-xl px-2">
             Le goût qui <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">rassemble</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-red-600 to-pink-600">rassemble</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow-lg px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-800 mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow-lg px-4 font-semibold">
             Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
           </p>
           <div className="flex flex-col gap-3 sm:gap-4 justify-center items-stretch px-4 sm:px-0 max-w-2xl mx-auto">
