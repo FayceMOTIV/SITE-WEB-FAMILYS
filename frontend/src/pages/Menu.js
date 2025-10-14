@@ -71,7 +71,7 @@ const Menu = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 px-2">
             Notre <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Carte</span>
           </h1>
-          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-orange-100 max-w-2xl mx-auto px-4">
             Découvrez notre carte complète avec burgers, tacos, desserts et bien plus encore
           </p>
         </div>
