@@ -20,13 +20,15 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
-              <span className="text-white font-bold text-xl">F</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+              alt="Family's Logo" 
+              className="h-10 sm:h-12 w-auto transform group-hover:scale-110 transition-all duration-300"
+            />
             <div className="flex flex-col">
-              <span className="text-white font-bold text-xl tracking-tight">{restaurantInfo.name}</span>
-              <span className="text-orange-400 text-xs font-medium">{restaurantInfo.tagline}</span>
+              <span className="text-white font-bold text-base sm:text-xl tracking-tight hidden sm:block">{restaurantInfo.name}</span>
+              <span className="text-orange-400 text-xs font-medium hidden sm:block">{restaurantInfo.tagline}</span>
             </div>
           </Link>
 
