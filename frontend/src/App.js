@@ -36,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <SEO />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
