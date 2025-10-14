@@ -22,8 +22,13 @@ const Home = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="inline-block mb-4 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-orange-500/30 to-red-600/30 border-2 border-orange-400 rounded-full backdrop-blur-sm">
-            <span className="text-orange-300 text-sm sm:text-base font-bold tracking-wide">🔥 LE FAMILY'S</span>
+          <div className="inline-block mb-6 sm:mb-8">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+              alt="Family's Logo" 
+              className="h-24 sm:h-32 md:h-40 w-auto mx-auto drop-shadow-2xl animate-pulse"
+              style={{ animationDuration: '3s' }}
+            />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl px-2">
             Le goût qui <br />
