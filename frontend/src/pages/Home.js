@@ -30,11 +30,10 @@ const Home = () => {
               className="h-24 sm:h-32 md:h-40 w-auto mx-auto drop-shadow-2xl"
             />
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl px-2">
-            Le goût qui <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">rassemble</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight drop-shadow-2xl px-2">
+            Le goût qui <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">rassemble</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-orange-100 mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow-lg px-4">
+          <p className="text-base sm:text-lg md:text-xl text-orange-100 mb-4 sm:mb-6 max-w-2xl mx-auto drop-shadow-lg px-4">
             Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
           </p>
           <div className="flex flex-col gap-3 sm:gap-4 justify-center items-stretch px-4 sm:px-0 max-w-2xl mx-auto">
