@@ -77,7 +77,7 @@ const Header = () => {
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-sm font-medium transition-colors duration-300 ${
-                    isActive(link.path) ? 'text-red-500' : 'text-gray-300 hover:text-white'
+                    isActive(link.path) ? 'text-orange-400' : 'text-gray-300 hover:text-white'
                   }`}
                 >
                   {link.name}
