@@ -24,7 +24,7 @@ const Header = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
               alt="Family's Logo" 
-              className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto transform group-hover:scale-110 transition-all duration-300"
+              className="h-24 sm:h-32 md:h-36 lg:h-40 w-auto transform group-hover:scale-110 transition-all duration-300 drop-shadow-lg"
             />
           </Link>
 
