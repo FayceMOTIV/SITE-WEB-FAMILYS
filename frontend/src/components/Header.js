@@ -24,12 +24,8 @@ const Header = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
               alt="Family's Logo" 
-              className="h-10 sm:h-12 w-auto transform group-hover:scale-110 transition-all duration-300"
+              className="h-14 sm:h-16 md:h-20 w-auto transform group-hover:scale-110 transition-all duration-300"
             />
-            <div className="flex flex-col">
-              <span className="text-white font-bold text-base sm:text-xl tracking-tight hidden sm:block">{restaurantInfo.name}</span>
-              <span className="text-orange-400 text-xs font-medium hidden sm:block">{restaurantInfo.tagline}</span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
