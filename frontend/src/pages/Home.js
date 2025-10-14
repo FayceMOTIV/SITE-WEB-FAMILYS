@@ -37,17 +37,18 @@ const Home = () => {
               href={restaurantInfo.orderLink}
               target="_blank"
               rel="noopener noreferrer"
+              className="w-full sm:w-auto"
             >
-              <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-orange-600/60 transform hover:scale-105 transition-all duration-300">
+              <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl shadow-2xl shadow-orange-600/60 transform hover:scale-105 transition-all duration-300">
                 Commander en ligne
-                <ArrowRight className="ml-2" size={24} />
+                <ArrowRight className="ml-2" size={20} />
               </Button>
             </a>
             <a
               href={`tel:${restaurantInfo.phone.replace(/\s/g, '')}`}
-              className="inline-block"
+              className="w-full sm:w-auto"
             >
-              <Button className="bg-blue-600 border-2 border-blue-400 text-white hover:bg-blue-700 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-blue-600/60 transform hover:scale-105 transition-all duration-300">
+              <Button className="w-full sm:w-auto bg-blue-600 border-2 border-blue-400 text-white hover:bg-blue-700 px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl shadow-2xl shadow-blue-600/60 transform hover:scale-105 transition-all duration-300">
                 📞 {restaurantInfo.phone}
               </Button>
             </a>
@@ -55,13 +56,14 @@ const Home = () => {
               href={restaurantInfo.uberEatsLink}
               target="_blank"
               rel="noopener noreferrer"
+              className="w-full sm:w-auto"
             >
-              <Button className="bg-black border-2 border-green-500 text-white hover:bg-green-500 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl shadow-green-500/60 transform hover:scale-105 transition-all duration-300">
+              <Button className="w-full sm:w-auto bg-black border-2 border-green-500 text-white hover:bg-green-500 px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl shadow-2xl shadow-green-500/60 transform hover:scale-105 transition-all duration-300">
                 🚗 Livraison Uber Eats
               </Button>
             </a>
-            <Link to="/menu">
-              <Button variant="outline" className="border-2 border-orange-400 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:border-transparent px-10 py-7 text-xl font-bold rounded-xl transition-all duration-300 backdrop-blur-sm">
+            <Link to="/menu" className="w-full sm:w-auto">
+              <Button variant="outline" className="w-full sm:w-auto border-2 border-orange-400 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:border-transparent px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl transition-all duration-300 backdrop-blur-sm">
                 Voir le menu
               </Button>
             </Link>
