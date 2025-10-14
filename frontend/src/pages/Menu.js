@@ -1,67 +1,153 @@
 import React, { useState } from 'react';
-import { menuCategories, restaurantInfo } from '../data/mock';
+import { restaurantInfo } from '../data/mock';
 import { Button } from '../components/ui/button';
-import { Card, CardContent } from '../components/ui/card';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '../components/ui/carousel';
 
 const Menu = () => {
-  const [selectedCategory, setSelectedCategory] = useState(menuCategories[0].id);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const currentCategory = menuCategories.find(cat => cat.id === selectedCategory);
+  const menuImages = [
+    {
+      id: 1,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/i1q35wil_1.png',
+      title: 'Burgers Classic',
+      description: 'Nos burgers signature avec promotion -50%'
+    },
+    {
+      id: 2,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/1y0pzk2i_5.png',
+      title: 'Burgers Deluxe',
+      description: 'Collection premium de burgers gourmands'
+    },
+    {
+      id: 3,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/9qx8ah10_8.png',
+      title: 'Tacos',
+      description: 'Tacos Classic et Deluxe personnalisables'
+    },
+    {
+      id: 4,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4o2992pu_9.png',
+      title: 'Desserts',
+      description: 'Sundaes, milkshakes et douceurs maison'
+    },
+    {
+      id: 5,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/vk569wuv_11.png',
+      title: 'Accompagnements & Salades',
+      description: 'Tex Mex, Menu Kid, Salades fraîches'
+    },
+    {
+      id: 6,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/ef1uz5w2_12.png',
+      title: 'Spécialités',
+      description: 'Bowls et créations spéciales'
+    },
+    {
+      id: 7,
+      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/fcmz0rer_13.png',
+      title: 'Menu Complet',
+      description: 'Personnalisez votre repas'
+    }
+  ];
 
   return (
-    <div className="min-h-screen bg-black pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black pt-24 pb-16">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-            Notre <span className="text-red-500">Menu</span>
+            Notre <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Carte</span>
           </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Découvrez notre sélection de burgers, tacos, accompagnements et desserts préparés avec passion
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Découvrez notre carte complète avec burgers, tacos, desserts et bien plus encore
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {menuCategories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                selectedCategory === category.id
-                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/50'
-                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-              }`}
-            >
-              {category.name}
-            </button>
-          ))}
-        </div>
+        {/* Menu Carousel */}
+        <div className="mb-16 relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {menuImages.map((menu, index) => (
+                <CarouselItem key={menu.id} className="md:basis-1/1">
+                  <div className="p-2">
+                    <div className="relative group">
+                      {/* Image Container with Special Effects */}
+                      <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-orange-500/30">
+                        <img
+                          src={menu.url}
+                          alt={menu.title}
+                          className="w-full h-auto object-contain bg-gray-800 rounded-2xl transition-transform duration-700 group-hover:scale-105"
+                        />
+                        
+                        {/* Overlay Gradient on Hover */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                        
+                        {/* Info Overlay */}
+                        <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                          <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">
+                            {menu.title}
+                          </h3>
+                          <p className="text-gray-200 text-lg drop-shadow-md">
+                            {menu.description}
+                          </p>
+                        </div>
 
-        {/* Menu Items */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {currentCategory?.items.map((item, index) => (
-            <Card key={index} className="bg-gray-800 border-gray-700 hover:border-red-500 transition-all duration-300 group">
-              <CardContent className="p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors duration-300">
-                    {item.name}
-                  </h3>
-                  <span className="text-red-500 text-xl font-bold">{item.price}</span>
-                </div>
-                <p className="text-gray-400 text-sm">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+                        {/* Glow Effect */}
+                        <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                          <div className="absolute inset-0 rounded-2xl shadow-[0_0_50px_rgba(251,146,60,0.5)]"></div>
+                        </div>
+                      </div>
+
+                      {/* Slide Number Indicator */}
+                      <div className="absolute top-6 right-6 bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
+                        {index + 1} / {menuImages.length}
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+
+            {/* Custom Navigation Buttons */}
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white border-0 w-14 h-14 shadow-xl hover:scale-110 transition-all duration-300" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white border-0 w-14 h-14 shadow-xl hover:scale-110 transition-all duration-300" />
+          </Carousel>
+
+          {/* Progress Dots */}
+          <div className="flex justify-center gap-3 mt-8">
+            {menuImages.map((_, index) => (
+              <div
+                key={index}
+                className={`h-2 rounded-full transition-all duration-500 ${
+                  index === currentSlide 
+                    ? 'w-12 bg-gradient-to-r from-orange-500 to-red-600' 
+                    : 'w-2 bg-gray-600 hover:bg-gray-500'
+                }`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-red-900/20 to-red-600/20 border border-red-600/30 rounded-2xl p-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-3xl p-12 text-center shadow-2xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
             Prêt à commander ?
           </h2>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-white text-xl mb-8 max-w-2xl mx-auto drop-shadow">
             Passez votre commande en ligne et venez la récupérer ou profitez de notre service de livraison
           </p>
           <a
@@ -69,9 +155,9 @@ const Menu = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg shadow-red-600/50 transform hover:scale-105 transition-all duration-300">
+            <Button className="bg-white text-gray-900 hover:bg-yellow-300 px-10 py-7 text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300">
               Commander maintenant
-              <ArrowRight className="ml-2" size={20} />
+              <ArrowRight className="ml-3" size={24} />
             </Button>
           </a>
         </div>
