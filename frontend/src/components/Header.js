@@ -37,12 +37,12 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors duration-300 relative group ${
-                  isActive(link.path) ? 'text-red-500' : 'text-gray-300 hover:text-white'
+                  isActive(link.path) ? 'text-orange-400' : 'text-gray-300 hover:text-white'
                 }`}
               >
                 {link.name}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-red-500 transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-400 to-red-500 transition-all duration-300 ${
                     isActive(link.path) ? 'w-full' : 'w-0 group-hover:w-full'
                   }`}
                 />
@@ -52,7 +52,7 @@ const Header = () => {
               href={restaurantInfo.orderLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2.5 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-red-600/50"
+              className="px-6 py-2.5 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-600/50"
             >
               Commander
             </a>
