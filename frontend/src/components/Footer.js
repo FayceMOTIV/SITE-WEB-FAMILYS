@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-6">
               <img 
                 src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
                 alt="Family's Logo" 
-                className="h-28 sm:h-32 md:h-36 w-auto"
+                className="h-36 sm:h-40 md:h-48 w-auto"
               />
             </div>
             <p className="text-gray-400 text-sm mb-4 max-w-md">
