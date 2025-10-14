@@ -67,17 +67,17 @@ const Menu = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black pt-24 pb-16">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 px-2">
             Notre <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Carte</span>
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
             Découvrez notre carte complète avec burgers, tacos, desserts et bien plus encore
           </p>
         </div>
 
         {/* Menu Carousel */}
-        <div className="mb-16 relative">
+        <div className="mb-12 sm:mb-16 relative">
           <div className="relative overflow-hidden">
             {/* Carousel Container */}
             <div className="relative">
