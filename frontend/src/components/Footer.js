@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
                 alt="Family's Logo" 
-                className="h-16 w-auto"
+                className="h-20 sm:h-24 w-auto"
               />
             </div>
             <p className="text-gray-400 text-sm mb-4 max-w-md">
