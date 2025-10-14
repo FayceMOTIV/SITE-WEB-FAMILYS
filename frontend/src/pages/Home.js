@@ -91,36 +91,36 @@ const Home = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
               <Card className="bg-gradient-to-br from-red-600 to-orange-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-red-500/50 transition-all duration-300">
-                <CardContent className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Un lieu spacieux et accueillant</h3>
-                  <p className="text-white/90 leading-relaxed">
+                <CardContent className="p-6 sm:p-8 text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Un lieu spacieux et accueillant</h3>
+                  <p className="text-white/90 leading-relaxed text-sm sm:text-base">
                     Avec ses 250 m² de salle chaleureusement décorée et une terrasse ensoleillée de 60 m², le Family's vous reçoit dans une ambiance détendue, idéale pour un déjeuner en semaine ou un dîner festif le week-end.
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="bg-gradient-to-br from-orange-500 to-yellow-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300">
-                <CardContent className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Pensé pour petits et grands</h3>
-                  <p className="text-white/90 leading-relaxed">
+                <CardContent className="p-6 sm:p-8 text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Pensé pour petits et grands</h3>
+                  <p className="text-white/90 leading-relaxed text-sm sm:text-base">
                     Notre restaurant dispose d'une aire de jeux sécurisée et ludique pour les enfants, pour leur plus grand bonheur… et votre tranquillité. Un espace familial où tout le monde se sent bien.
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="bg-gradient-to-br from-yellow-500 to-red-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300">
-                <CardContent className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Cuisine variée et généreuse</h3>
-                  <p className="text-white/90 leading-relaxed">
+                <CardContent className="p-6 sm:p-8 text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Cuisine variée et généreuse</h3>
+                  <p className="text-white/90 leading-relaxed text-sm sm:text-base">
                     Plats maison, saveurs authentiques et portions généreuses sont la marque de fabrique du Family's. Ici, on se régale sans chichi, dans une ambiance conviviale où l'on se sent comme à la maison.
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="bg-gradient-to-br from-red-500 to-pink-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300">
-                <CardContent className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Livraison via Uber Eats</h3>
-                  <p className="text-white/90 leading-relaxed">
+                <CardContent className="p-6 sm:p-8 text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Livraison via Uber Eats</h3>
+                  <p className="text-white/90 leading-relaxed text-sm sm:text-base">
                     Envie de nos burgers et tacos chez vous ? Commandez sur Uber Eats et profitez de nos plats fraîchement préparés directement à votre porte. La même qualité, où que vous soyez !
                   </p>
                 </CardContent>
