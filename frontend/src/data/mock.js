@@ -168,6 +168,7 @@ export const restaurantInfo = {
     facebook: "https://www.facebook.com/lefamilys"
   },
   orderLink: "https://familys.commandes.io/home/places",
+  uberEatsLink: "https://www.ubereats.com/store/familys/MSxg-IKzTW6v-bjwfUgDcg?utm_source=menu-maker",
   appLinks: {
     ios: "https://apps.apple.com/fr/app/family-s-bourg-en-bresse/id6504155113",
     android: "https://play.google.com/store/apps/details?id=fr.mizzup.familys"
