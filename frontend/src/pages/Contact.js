@@ -35,6 +35,26 @@ const Contact = () => {
               </CardContent>
             </Card>
 
+            {/* Phone Card */}
+            <Card className="bg-gray-800 border-gray-700 hover:border-orange-500 transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="text-orange-500" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-semibold text-xl mb-2">Téléphone</h3>
+                    <a
+                      href={`tel:${restaurantInfo.phone.replace(/\s/g, '')}`}
+                      className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-lg font-semibold"
+                    >
+                      {restaurantInfo.phone}
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Email Card */}
             <Card className="bg-gray-800 border-gray-700 hover:border-red-500 transition-all duration-300">
               <CardContent className="p-8">
