@@ -152,42 +152,42 @@ const Home = () => {
       </section>
 
       {/* Reviews Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-gradient-to-b from-gray-700 to-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Ce que disent nos <span className="text-red-500">clients</span>
+              Ce que disent nos <span className="text-orange-400">clients</span>
             </h2>
             <div className="flex items-center justify-center space-x-2 mb-4">
               <div className="flex space-x-1">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="text-yellow-500 fill-yellow-500" size={24} />
+                  <Star key={star} className="text-yellow-400 fill-yellow-400" size={28} />
                 ))}
               </div>
-              <span className="text-white text-xl font-semibold">4.8/5</span>
-              <span className="text-gray-400">sur Google</span>
+              <span className="text-white text-2xl font-bold">4.8/5</span>
+              <span className="text-gray-300">sur Google</span>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {reviews.map((review) => (
-              <Card key={review.id} className="bg-gray-800 border-gray-700 hover:border-red-500 transition-all duration-300">
+              <Card key={review.id} className="bg-white/10 backdrop-blur-sm border-white/20 hover:border-orange-400 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
                       {review.avatar}
                     </div>
                     <div className="flex-1">
                       <h4 className="text-white font-semibold">{review.name}</h4>
                       <div className="flex items-center space-x-1">
                         {[...Array(review.rating)].map((_, i) => (
-                          <Star key={i} className="text-yellow-500 fill-yellow-500" size={14} />
+                          <Star key={i} className="text-yellow-400 fill-yellow-400" size={14} />
                         ))}
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-sm line-clamp-4">{review.text}</p>
-                  <span className="text-gray-500 text-xs mt-2 block">{review.date}</span>
+                  <p className="text-gray-200 text-sm line-clamp-4">{review.text}</p>
+                  <span className="text-gray-400 text-xs mt-2 block">{review.date}</span>
                 </CardContent>
               </Card>
             ))}
