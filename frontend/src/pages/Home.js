@@ -262,7 +262,7 @@ const Home = () => {
       </section>
 
       {/* App Download Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-orange-50 to-amber-50">
         <div className="container mx-auto px-4">
           <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
             <Smartphone className="text-white mx-auto mb-4 sm:mb-6 drop-shadow-lg" size={48} />
