@@ -167,25 +167,25 @@ const Home = () => {
       </section>
 
       {/* Reviews Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-700 to-gray-800">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-700 to-gray-800">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-2">
               Ce que disent nos <span className="text-orange-400">clients</span>
             </h2>
-            <div className="flex items-center justify-center space-x-2 mb-4">
+            <div className="flex items-center justify-center space-x-2 mb-4 flex-wrap">
               <div className="flex space-x-1">
                 {[1, 2, 3, 4].map((star) => (
-                  <Star key={star} className="text-yellow-400 fill-yellow-400" size={28} />
+                  <Star key={star} className="text-yellow-400 fill-yellow-400" size={24} />
                 ))}
-                <Star className="text-yellow-400 fill-yellow-400" size={28} style={{ clipPath: 'inset(0 70% 0 0)' }} />
+                <Star className="text-yellow-400 fill-yellow-400" size={24} style={{ clipPath: 'inset(0 70% 0 0)' }} />
               </div>
-              <span className="text-white text-2xl font-bold">4.3/5</span>
-              <span className="text-gray-300">sur Google</span>
+              <span className="text-white text-xl sm:text-2xl font-bold">4.3/5</span>
+              <span className="text-gray-300 text-sm sm:text-base">sur Google</span>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {reviews.map((review) => (
               <Card key={review.id} className="bg-white/10 backdrop-blur-sm border-white/20 hover:border-orange-400 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
                 <CardContent className="p-6">
