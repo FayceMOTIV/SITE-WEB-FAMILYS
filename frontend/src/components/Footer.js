@@ -47,17 +47,17 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Liens rapides</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-red-500 text-sm transition-colors duration-300">
+                <Link to="/" className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-300">
                   Accueil
                 </Link>
               </li>
               <li>
-                <Link to="/menu" className="text-gray-400 hover:text-red-500 text-sm transition-colors duration-300">
+                <Link to="/menu" className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-300">
                   Menu
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-red-500 text-sm transition-colors duration-300">
+                <Link to="/contact" className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-300">
                   Contact
                 </Link>
               </li>
@@ -66,7 +66,7 @@ const Footer = () => {
                   href={restaurantInfo.orderLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-red-500 text-sm transition-colors duration-300"
+                  className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-300"
                 >
                   Commander en ligne
                 </a>
