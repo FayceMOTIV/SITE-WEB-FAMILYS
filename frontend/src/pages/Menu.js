@@ -8,6 +8,9 @@ const Menu = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState(null);
   const [zoomLevel, setZoomLevel] = useState(1);
+  const [panPosition, setPanPosition] = useState({ x: 0, y: 0 });
+  const [touchStart, setTouchStart] = useState(null);
+  const [lastDistance, setLastDistance] = useState(0);
 
   const menuImages = [
     {
