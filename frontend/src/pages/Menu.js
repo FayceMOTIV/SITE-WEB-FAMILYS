@@ -156,8 +156,14 @@ const Menu = () => {
                     </div>
 
                     {/* Slide Number Indicator */}
-                    <div className="absolute top-3 right-3 sm:top-6 sm:right-6 bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold shadow-lg z-10 text-sm sm:text-base">
+                    <div className="absolute top-3 right-3 sm:top-6 sm:right-6 bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold shadow-lg z-10 text-sm sm:text-base pointer-events-none">
                       {currentSlide + 1} / {menuImages.length}
+                    </div>
+                    
+                    {/* Zoom button visible sur mobile */}
+                    <div className="absolute bottom-3 right-3 sm:hidden bg-white text-orange-600 px-4 py-2 rounded-full font-bold shadow-2xl z-10 text-sm flex items-center gap-2 pointer-events-none">
+                      <ZoomIn size={18} />
+                      Appuyez pour agrandir
                     </div>
                   </div>
                 </div>
