@@ -117,13 +117,24 @@ const Menu = () => {
                 >
                   <div className="relative group">
                     {/* Image Container with Special Effects */}
-                    <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-orange-500/30">
+                    <div 
+                      className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-orange-500/30 cursor-pointer"
+                      onClick={() => openLightbox(menu.url)}
+                    >
                       <img
                         src={menu.url}
                         alt={menu.title}
                         loading="lazy"
                         className="w-full h-auto object-contain bg-gray-800 rounded-2xl transition-transform duration-700 group-hover:scale-105"
                       />
+                      
+                      {/* Zoom Icon Overlay */}
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
+                        <div className="bg-white/90 p-4 rounded-full">
+                          <Maximize2 className="text-orange-600" size={32} />
+                        </div>
+                        <p className="absolute bottom-4 text-white font-bold text-lg drop-shadow-lg">Cliquez pour agrandir</p>
+                      </div>
                       
                       {/* Overlay Gradient on Hover */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
