@@ -73,14 +73,16 @@ const Menu = () => {
     setLightboxImage(imageUrl);
     setIsLightboxOpen(true);
     setZoomLevel(1);
-    document.body.style.overflow = 'hidden'; // Empêcher le scroll
+    setPanPosition({ x: 0, y: 0 });
+    document.body.style.overflow = 'hidden';
   };
 
   const closeLightbox = () => {
     setIsLightboxOpen(false);
     setLightboxImage(null);
     setZoomLevel(1);
-    document.body.style.overflow = 'auto'; // Réactiver le scroll
+    setPanPosition({ x: 0, y: 0 });
+    document.body.style.overflow = 'auto';
   };
 
   const handleZoomIn = () => {
@@ -89,6 +91,66 @@ const Menu = () => {
 
   const handleZoomOut = () => {
     setZoomLevel(prev => Math.max(prev - 0.5, 1));
+    if (zoomLevel <= 1.5) {
+      setPanPosition({ x: 0, y: 0 });
+    }
+  };
+
+  // Calculer la distance entre deux points tactiles
+  const getDistance = (touch1, touch2) => {
+    const dx = touch1.clientX - touch2.clientX;
+    const dy = touch1.clientY - touch2.clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  };
+
+  // Gestion du pinch-to-zoom
+  const handleTouchStart = (e) => {
+    if (e.touches.length === 2) {
+      // Pinch gesture
+      const distance = getDistance(e.touches[0], e.touches[1]);
+      setLastDistance(distance);
+    } else if (e.touches.length === 1) {
+      // Pan gesture
+      setTouchStart({
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY
+      });
+    }
+  };
+
+  const handleTouchMove = (e) => {
+    if (e.touches.length === 2) {
+      // Pinch to zoom
+      e.preventDefault();
+      const distance = getDistance(e.touches[0], e.touches[1]);
+      
+      if (lastDistance > 0) {
+        const scale = distance / lastDistance;
+        const newZoom = Math.min(Math.max(zoomLevel * scale, 1), 3);
+        setZoomLevel(newZoom);
+      }
+      
+      setLastDistance(distance);
+    } else if (e.touches.length === 1 && touchStart && zoomLevel > 1) {
+      // Pan when zoomed
+      const deltaX = e.touches[0].clientX - touchStart.x;
+      const deltaY = e.touches[0].clientY - touchStart.y;
+      
+      setPanPosition(prev => ({
+        x: prev.x + deltaX,
+        y: prev.y + deltaY
+      }));
+      
+      setTouchStart({
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY
+      });
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setLastDistance(0);
+    setTouchStart(null);
   };
 
   return (
