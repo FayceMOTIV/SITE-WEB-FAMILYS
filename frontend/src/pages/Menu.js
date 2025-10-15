@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { restaurantInfo } from '../data/mock';
 import { Button } from '../components/ui/button';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, X, ZoomIn, Maximize2 } from 'lucide-react';
 
 const Menu = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
