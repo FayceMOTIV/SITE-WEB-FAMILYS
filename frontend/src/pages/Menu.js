@@ -350,10 +350,14 @@ const Menu = () => {
             </p>
           </div>
 
-          {/* Image container avec scroll */}
+          {/* Image container avec pinch-to-zoom */}
           <div 
-            className="w-full h-full overflow-auto flex items-center justify-center touch-pan-x touch-pan-y"
+            className="w-full h-full flex items-center justify-center overflow-hidden"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
             style={{ 
+              touchAction: 'none',
               WebkitOverflowScrolling: 'touch',
               overscrollBehavior: 'contain'
             }}
@@ -361,13 +365,14 @@ const Menu = () => {
             <img
               src={lightboxImage}
               alt="Menu agrandi"
-              className="max-w-none transition-transform duration-200 select-none"
+              className="max-w-none select-none"
               style={{
-                transform: `scale(${zoomLevel})`,
+                transform: `scale(${zoomLevel}) translate(${panPosition.x / zoomLevel}px, ${panPosition.y / zoomLevel}px)`,
                 transformOrigin: 'center center',
-                touchAction: 'pan-x pan-y pinch-zoom',
-                width: zoomLevel > 1 ? `${100 * zoomLevel}%` : 'auto',
-                minWidth: '100%'
+                transition: lastDistance === 0 ? 'transform 0.2s ease-out' : 'none',
+                width: '100%',
+                height: 'auto',
+                maxWidth: 'none'
               }}
               draggable="false"
             />
