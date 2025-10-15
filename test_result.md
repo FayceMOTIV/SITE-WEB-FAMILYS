@@ -172,11 +172,14 @@ frontend:
     file: "frontend/src/pages/MentionsLegales.js"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Page Mentions Légales créée avec contenu complet extrait du site existant, routes configurées dans App.js, liens dans Footer"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: Page accessible via footer link, titre correct 'Mentions Légales', contenu complet avec 6 sections (PRÉSENTATION DU SITE, OBJET, etc.), responsive mobile OK avec cartes bien affichées, nom restaurant et téléphone présents"
 
   - task: "Page CGV"
     implemented: true
@@ -184,11 +187,14 @@ frontend:
     file: "frontend/src/pages/CGV.js"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Page CGV créée avec contenu professionnel adapté pour restaurant, routes configurées dans App.js, liens dans Footer"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: Page accessible via footer link, titre correct 'Conditions Générales de Vente', contenu complet avec 10 articles (OBJET, PRODUITS ET SERVICES, PRIX, etc.), responsive mobile OK avec cartes bien affichées, mentions burgers artisanaux présentes"
 
   - task: "Navigation et liens footer"
     implemented: true
@@ -196,11 +202,14 @@ frontend:
     file: "frontend/src/components/Footer.js"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Liens vers Mentions Légales et CGV ajoutés dans le footer"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: Liens footer fonctionnels - navigation vers /mentions-legales et /cgv OK, retour navigation générale (Accueil, Menu, Contact) OK, boutons Commander et Uber Eats présents et cliquables"
 
 metadata:
   created_by: "main_agent"
