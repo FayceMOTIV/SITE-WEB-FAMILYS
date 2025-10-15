@@ -239,6 +239,89 @@ const Menu = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal pour zoom */}
+      {isLightboxOpen && (
+        <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4">
+          {/* Header avec contrôles */}
+          <div className="absolute top-4 left-0 right-0 flex justify-between items-center px-4 z-10">
+            <div className="flex gap-2">
+              <button
+                onClick={handleZoomOut}
+                disabled={zoomLevel <= 1}
+                className="bg-white/90 hover:bg-white text-gray-900 p-3 rounded-full disabled:opacity-50 disabled:cursor-not-allowed shadow-xl"
+              >
+                <span className="text-xl font-bold">-</span>
+              </button>
+              <button
+                onClick={handleZoomIn}
+                disabled={zoomLevel >= 3}
+                className="bg-white/90 hover:bg-white text-gray-900 p-3 rounded-full disabled:opacity-50 disabled:cursor-not-allowed shadow-xl"
+              >
+                <span className="text-xl font-bold">+</span>
+              </button>
+              <div className="bg-white/90 px-4 py-3 rounded-full text-gray-900 font-bold shadow-xl">
+                {Math.round(zoomLevel * 100)}%
+              </div>
+            </div>
+            <button
+              onClick={closeLightbox}
+              className="bg-red-600 hover:bg-red-700 text-white p-3 rounded-full shadow-xl"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
+          {/* Instructions mobile */}
+          <div className="absolute top-20 left-0 right-0 text-center z-10">
+            <p className="text-white text-sm bg-black/50 inline-block px-4 py-2 rounded-full">
+              📱 Pincez pour zoomer • Faites glisser pour déplacer
+            </p>
+          </div>
+
+          {/* Image container avec scroll */}
+          <div className="w-full h-full overflow-auto flex items-center justify-center">
+            <img
+              src={lightboxImage}
+              alt="Menu agrandi"
+              className="max-w-none transition-transform duration-300"
+              style={{
+                transform: `scale(${zoomLevel})`,
+                transformOrigin: 'center center',
+                touchAction: zoomLevel > 1 ? 'pan-x pan-y' : 'auto'
+              }}
+            />
+          </div>
+
+          {/* Navigation entre slides depuis le lightbox */}
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-10">
+            <button
+              onClick={() => {
+                const newSlide = (currentSlide - 1 + menuImages.length) % menuImages.length;
+                setCurrentSlide(newSlide);
+                setLightboxImage(menuImages[newSlide].url);
+                setZoomLevel(1);
+              }}
+              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2"
+            >
+              <ChevronLeft size={24} />
+              Précédent
+            </button>
+            <button
+              onClick={() => {
+                const newSlide = (currentSlide + 1) % menuImages.length;
+                setCurrentSlide(newSlide);
+                setLightboxImage(menuImages[newSlide].url);
+                setZoomLevel(1);
+              }}
+              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2"
+            >
+              Suivant
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
