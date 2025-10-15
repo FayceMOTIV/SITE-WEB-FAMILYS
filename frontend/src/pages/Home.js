@@ -22,7 +22,7 @@ const Home = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center py-12 sm:py-16">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-32 sm:pt-40 md:pt-44 pb-8 sm:pb-12">
           <div className="inline-block mb-4 sm:mb-6">
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
