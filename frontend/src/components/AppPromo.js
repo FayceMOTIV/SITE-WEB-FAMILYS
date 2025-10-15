@@ -181,17 +181,6 @@ const AppPromo = () => {
                 </Card>
               </a>
             </div>
-
-            {/* Message promotionnel */}
-            <div className="mt-8 sm:mt-12">
-              <Card className="bg-gradient-to-r from-yellow-500 to-orange-500 border-yellow-400/50 max-w-2xl mx-auto">
-                <CardContent className="p-4 sm:p-6">
-                  <p className="text-gray-900 font-bold text-lg sm:text-xl lg:text-2xl">
-                    🎁 Offre de bienvenue : -10% sur votre première commande via l'application !
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </div>
