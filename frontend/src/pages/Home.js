@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star, Clock, ChefHat, Smartphone, ArrowRight } from 'lucide-react';
+import { Star, Clock, ChefHat, ArrowRight } from 'lucide-react';
 import { burgers, reviews, whyChooseUs, restaurantInfo } from '../data/mock';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import SocialMedia from '../components/SocialMedia';
+import AppPromo from '../components/AppPromo';
 
 const Home = () => {
   return (
