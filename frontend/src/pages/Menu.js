@@ -66,6 +66,28 @@ const Menu = () => {
     setCurrentSlide(index);
   };
 
+  const openLightbox = (imageUrl) => {
+    setLightboxImage(imageUrl);
+    setIsLightboxOpen(true);
+    setZoomLevel(1);
+    document.body.style.overflow = 'hidden'; // Empêcher le scroll
+  };
+
+  const closeLightbox = () => {
+    setIsLightboxOpen(false);
+    setLightboxImage(null);
+    setZoomLevel(1);
+    document.body.style.overflow = 'auto'; // Réactiver le scroll
+  };
+
+  const handleZoomIn = () => {
+    setZoomLevel(prev => Math.min(prev + 0.5, 3));
+  };
+
+  const handleZoomOut = () => {
+    setZoomLevel(prev => Math.max(prev - 0.5, 1));
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-24 pb-16">
       <div className="container mx-auto px-4">
