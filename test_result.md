@@ -242,7 +242,9 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus: []
+  current_focus:
+    - "Section Réseaux Sociaux"
+    - "Section Application Mobile"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
