@@ -8,6 +8,8 @@ import SEO from './components/SEO';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Contact from './pages/Contact';
+import MentionsLegales from './pages/MentionsLegales';
+import CGV from './pages/CGV';
 
 function App() {
   // Ajouter les animations au scroll
