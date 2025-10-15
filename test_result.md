@@ -218,10 +218,7 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus:
-    - "Page Mentions Légales"
-    - "Page CGV"
-    - "Navigation et liens footer"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
@@ -229,3 +226,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "Pages légales (Mentions Légales et CGV) créées avec succès. Contenu professionnel adapté au restaurant Le Family's. Routes configurées dans App.js et liens ajoutés dans le footer. Screenshots confirment le bon fonctionnement. Test automatisé frontend requis pour validation complète de la navigation et de l'affichage responsive."
+  - agent: "testing"
+    message: "✅ TESTS COMPLETS RÉUSSIS: Pages légales entièrement fonctionnelles. Navigation footer OK, contenu complet et professionnel, responsive mobile validé. Seules erreurs mineures: WebSocket dev server (non bloquant) et adresse complète manquante dans Mentions Légales (info présente mais format différent). Toutes les fonctionnalités critiques testées et validées."
