@@ -83,3 +83,122 @@ html {
     height: 60px;
     animation: spin 1s linear infinite;
 }
+
+/* Animations pour les cartes réseaux sociaux */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(249, 115, 22, 0.8);
+    }
+}
+
+.social-card-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Animation bounce pour les icônes */
+@keyframes bounce-subtle {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.icon-bounce:hover {
+    animation: bounce-subtle 0.6s ease-in-out infinite;
+}
+
+/* Gradient animé pour l'app promo */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+}
+
+/* Amélioration responsive pour les petits écrans */
+@media (max-width: 640px) {
+    .animate-on-scroll {
+        transform: translateY(20px);
+    }
+    
+    /* Espacement optimisé pour mobile */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Amélioration pour les tablettes */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-responsive {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Amélioration hover sur desktop */
+@media (hover: hover) {
+    .card-hover-effect:hover {
+        transform: translateY(-8px) scale(1.02);
+        transition: all 0.3s ease-out;
+    }
+}
+
+/* Touch feedback pour mobile */
+@media (hover: none) {
+    .card-hover-effect:active {
+        transform: scale(0.98);
+        transition: all 0.1s ease-out;
+    }
+}
+
+/* Animation d'entrée pour les sections */
+@keyframes slide-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-up {
+    animation: slide-in-up 0.8s ease-out forwards;
+}
+
+/* Effet shimmer pour les promotions */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.shimmer-effect {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 3s infinite;
+}
