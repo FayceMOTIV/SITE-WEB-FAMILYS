@@ -5,6 +5,9 @@ import { ArrowRight, ChevronLeft, ChevronRight, X, ZoomIn, Maximize2 } from 'luc
 
 const Menu = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState(null);
+  const [zoomLevel, setZoomLevel] = useState(1);
 
   const menuImages = [
     {
