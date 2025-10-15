@@ -211,6 +211,30 @@ frontend:
         agent: "testing"
         comment: "✅ TESTED: Liens footer fonctionnels - navigation vers /mentions-legales et /cgv OK, retour navigation générale (Accueil, Menu, Contact) OK, boutons Commander et Uber Eats présents et cliquables"
 
+  - task: "Section Réseaux Sociaux"
+    implemented: true
+    working: true
+    file: "frontend/src/components/SocialMedia.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Section réseaux sociaux créée avec gros logos Facebook et Instagram, cartes animées avec gradients, incitation à suivre pour nouveautés, design responsive"
+
+  - task: "Section Application Mobile"
+    implemented: true
+    working: true
+    file: "frontend/src/components/AppPromo.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Section application mobile créée avec mockup téléphone, présentation carte de fidélité (remise 5%), 4 avantages détaillés, boutons téléchargement App Store et Google Play, offre de bienvenue -10%, design très responsive"
+
 metadata:
   created_by: "main_agent"
   version: "1.0"
