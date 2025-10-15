@@ -256,38 +256,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* App Download Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-orange-950 to-red-950">
-        <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
-            <Smartphone className="text-white mx-auto mb-4 sm:mb-6 drop-shadow-lg" size={48} />
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 drop-shadow-lg px-2">
-              Téléchargez notre <span className="text-yellow-300">app</span>
-            </h2>
-            <p className="text-white text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow px-4">
-              Commandez plus rapidement et profitez d'offres exclusives
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
-              <a
-                href={restaurantInfo.appLinks.ios}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-white text-gray-900 font-bold text-base sm:text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
-              >
-                📱 App Store
-              </a>
-              <a
-                href={restaurantInfo.appLinks.android}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-white text-gray-900 font-bold text-base sm:text-lg rounded-xl hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-xl"
-              >
-                📱 Google Play
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Social Media Section - NEW */}
+      <SocialMedia />
+
+      {/* App Promo Section - NEW */}
+      <AppPromo />
     </div>
   );
 };
