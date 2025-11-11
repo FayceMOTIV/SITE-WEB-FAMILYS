@@ -8,6 +8,7 @@ import SEO from './components/SEO';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Contact from './pages/Contact';
+import Application from './pages/Application';
 import MentionsLegales from './pages/MentionsLegales';
 import CGV from './pages/CGV';
 
