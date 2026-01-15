@@ -77,7 +77,7 @@ const Home = () => {
 
       {/* About Section */}
       <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzYyODQ3Mjc3fDA&ixlib=rb-4.1.0&q=85')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundBlendMode: "overlay"
