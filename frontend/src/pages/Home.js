@@ -180,17 +180,14 @@ const Home = () => {
       </section>
 
       {/* Reviews Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-red-950 to-amber-950 animate-on-scroll overflow-hidden">
-        {/* Background burger image */}
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85"
-            alt="Background burger"
-            className="w-full h-full object-cover opacity-10"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-red-950/95 to-amber-950/95"></div>
-        </div>
+      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
+        backgroundImage: "url('https://images.pexels.com/photos/35566545/pexels-photo-35566545.jpeg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundBlendMode: "overlay"
+      }}>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-red-950/90 to-amber-950/90"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
