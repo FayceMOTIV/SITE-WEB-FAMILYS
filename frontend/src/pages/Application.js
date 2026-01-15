@@ -8,17 +8,14 @@ const Application = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-950 via-red-950 to-amber-950 overflow-hidden pt-32 sm:pt-40 md:pt-44 pb-16 sm:pb-20">
-        {/* Background burger image */}
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85"
-            alt="Background burger"
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
-        </div>
+      <section className="relative overflow-hidden pt-32 sm:pt-40 md:pt-44 pb-16 sm:pb-20" style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundBlendMode: "overlay"
+      }}>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
