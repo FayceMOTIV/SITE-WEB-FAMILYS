@@ -211,8 +211,19 @@ const Application = () => {
       </section>
 
       {/* Avantages de l'application */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-orange-950 to-red-950 animate-on-scroll">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-orange-950 to-red-950 animate-on-scroll overflow-hidden">
+        {/* Background burger image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85"
+            alt="Background burger"
+            className="w-full h-full object-cover opacity-15"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/85 to-red-950/85"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
