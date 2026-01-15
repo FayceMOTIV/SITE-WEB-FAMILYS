@@ -312,8 +312,19 @@ const Application = () => {
       </section>
 
       {/* Call to Action Final */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-red-950 to-amber-950 animate-on-scroll">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-red-950 to-amber-950 animate-on-scroll overflow-hidden">
+        {/* Background burger image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85"
+            alt="Background burger"
+            className="w-full h-full object-cover opacity-20"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-red-950/80 to-amber-950/80"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <Card className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 border-orange-400/50 shadow-2xl">
               <CardContent className="p-8 sm:p-12 lg:p-16 text-center">
