@@ -79,8 +79,19 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-amber-950 to-orange-900 animate-on-scroll">
-        <div className="container mx-auto px-4">
+      <section className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-amber-950 to-orange-900 animate-on-scroll overflow-hidden">
+        {/* Background burger image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzYyODQ3Mjc3fDA&ixlib=rb-4.1.0&q=85"
+            alt="Background burger"
+            className="w-full h-full object-cover opacity-15"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-amber-950/90 to-orange-900/90"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 px-2">
