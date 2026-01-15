@@ -25,19 +25,29 @@ const Home = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center pt-32 sm:pt-40 md:pt-44 pb-8 sm:pb-12">
-          <div className="inline-block mb-4 sm:mb-6">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
-              alt="Family's Logo" 
-              className="h-24 sm:h-32 md:h-40 w-auto mx-auto drop-shadow-2xl"
-            />
+          {/* Logo avec effet néon */}
+          <div className="inline-block mb-4 sm:mb-6 float-animation">
+            <div className="relative">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+                alt="Family's Logo" 
+                className="h-24 sm:h-32 md:h-40 w-auto mx-auto drop-shadow-2xl relative z-10"
+              />
+              {/* Effet de lueur derrière le logo */}
+              <div className="absolute inset-0 bg-orange-500/30 blur-3xl rounded-full"></div>
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight drop-shadow-2xl px-2">
-            Le goût qui <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">rassemble</span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-orange-100 mb-4 sm:mb-6 max-w-2xl mx-auto drop-shadow-lg px-4">
-            Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
-          </p>
+          
+          {/* Titre avec effet glassmorphism */}
+          <div className="glass-effect rounded-3xl p-6 sm:p-8 mb-6 mx-auto max-w-4xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 leading-tight px-2">
+              Le goût qui <span className="text-transparent bg-clip-text futuristic-gradient">rassemble</span>
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-4 max-w-2xl mx-auto px-4">
+              Burgers artisanaux, tacos savoureux et desserts gourmands à Bourg-en-Bresse
+            </p>
+          </div>
+          
           <div className="flex flex-col gap-3 sm:gap-4 justify-center items-stretch px-4 sm:px-0 max-w-2xl mx-auto">
             <a
               href={restaurantInfo.orderLink}
@@ -45,7 +55,7 @@ const Home = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
             >
-              <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl shadow-2xl shadow-orange-600/60 transform hover:scale-105 transition-all duration-300">
+              <Button className="w-full sm:w-auto futuristic-gradient text-white px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl shadow-2xl neon-glow transform hover:scale-105 transition-all duration-300 border-2 border-white/20">
                 Commander en ligne
                 <ArrowRight className="ml-2" size={20} />
               </Button>
