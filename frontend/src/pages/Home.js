@@ -11,14 +11,17 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-950 via-red-950 to-amber-950 overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1634737119182-4d09e1305ba7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxicmFzc2VyaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzY4NTAyMjcyfDA&ixlib=rb-4.1.0&q=85')",
+      <section className="relative overflow-hidden" style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODQyNDA2Mnww&ixlib=rb-4.1.0&q=85')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
+        backgroundAttachment: "fixed"
       }}>
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
+        {/* Overlay moderne avec effet glassmorphism */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-900/40 via-red-900/50 to-amber-900/40 backdrop-blur-sm"></div>
+        
+        {/* Effet néon futuriste */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500/10 to-red-500/20"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center pt-32 sm:pt-40 md:pt-44 pb-8 sm:pb-12">
