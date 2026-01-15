@@ -15,12 +15,12 @@ const Home = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1634737119182-4d09e1305ba7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBidXJnZXJ8ZW58MHx8fHwxNzYwNDQxMjc3fDA&ixlib=rb-4.1.0&q=85"
+            src="https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85"
             alt="Hero Burger"
-            className="w-full h-full object-cover opacity-20"
-            loading="lazy"
+            className="w-full h-full object-cover opacity-30"
+            loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/90 via-red-950/85 to-amber-950/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/80 via-red-950/75 to-amber-950/80"></div>
         </div>
 
         {/* Hero Content */}
