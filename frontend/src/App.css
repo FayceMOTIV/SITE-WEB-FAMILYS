@@ -237,3 +237,77 @@ html {
 .animated-overlay {
     animation: gradient-overlay 5s ease-in-out infinite;
 }
+
+/* Effet néon futuriste */
+@keyframes neon-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(249, 115, 22, 0.5),
+                    0 0 10px rgba(249, 115, 22, 0.4),
+                    0 0 15px rgba(249, 115, 22, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(249, 115, 22, 0.8),
+                    0 0 20px rgba(249, 115, 22, 0.6),
+                    0 0 30px rgba(249, 115, 22, 0.4);
+    }
+}
+
+.neon-glow {
+    animation: neon-glow 2s ease-in-out infinite;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Effet parallax amélioré */
+@keyframes float-smooth {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+.float-animation {
+    animation: float-smooth 6s ease-in-out infinite;
+}
+
+/* Gradient animé futuriste */
+@keyframes gradient-shift-futuristic {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.futuristic-gradient {
+    background: linear-gradient(
+        270deg,
+        #f97316,
+        #dc2626,
+        #fb923c,
+        #ea580c
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift-futuristic 8s ease infinite;
+}
+
+/* Effet de lueur sur les cartes */
+.card-glow:hover {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.6),
+                0 0 40px rgba(249, 115, 22, 0.4),
+                0 0 60px rgba(249, 115, 22, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
