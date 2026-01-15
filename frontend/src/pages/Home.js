@@ -12,7 +12,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-orange-950 via-red-950 to-amber-950 overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1634737119182-4d09e1305ba7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxicmFzc2VyaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzY4NTAyMjcyfDA&ixlib=rb-4.1.0&q=85')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundBlendMode: "overlay"
