@@ -145,17 +145,14 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-orange-900 to-red-950 animate-on-scroll overflow-hidden">
-        {/* Background burger image */}
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2Mjg0NzI3MXww&ixlib=rb-4.1.0&q=85"
-            alt="Background burger"
-            className="w-full h-full object-cover opacity-10"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-orange-900/95 to-red-950/95"></div>
-        </div>
+      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundBlendMode: "overlay"
+      }}>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-orange-900/90 to-red-950/90"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
