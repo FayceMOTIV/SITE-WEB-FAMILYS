@@ -6,10 +6,15 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import SocialMedia from '../components/SocialMedia';
 import AppPromo from '../components/AppPromo';
+import HeroFullscreen from '../components/HeroFullscreen';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
+    <div className="min-h-screen" style={{ margin: 0, padding: 0 }}>
+      {/* Hero Fullscreen avec GSAP */}
+      <HeroFullscreen />
+      
+      <div className="bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
       {/* Hero Section */}
       <section className="relative overflow-hidden" style={{
         backgroundImage: "url('https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODQyNDA2Mnww&ixlib=rb-4.1.0&q=85')",
