@@ -15,15 +15,6 @@ const Home = () => {
       <HeroFullscreen />
       
       <div className="bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
-            <Link to="/menu" className="w-full sm:w-auto">
-              <Button variant="outline" className="w-full sm:w-auto border-2 border-orange-400 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:border-transparent px-6 sm:px-10 py-4 sm:py-7 text-base sm:text-xl font-bold rounded-xl transition-all duration-300 backdrop-blur-sm">
-                Voir le menu
-              </Button>
-            </Link>
-          </div>
-        </div>
-
-      </section>
 
       {/* About Section */}
       <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
