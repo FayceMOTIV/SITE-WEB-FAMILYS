@@ -165,19 +165,16 @@ class BackendTester:
         print("\n=== TESTING CORS CONFIGURATION ===")
         
         try:
-            response = requests.options(f"{API_BASE}/", timeout=10)
-            headers = response.headers
+            # Test with Origin header to trigger CORS response
+            headers = {"Origin": "https://example.com"}
+            response = requests.get(f"{API_BASE}/", headers=headers, timeout=10)
+            response_headers = response.headers
             
-            if "Access-Control-Allow-Origin" in headers:
-                self.log_result("CORS Headers", True, f"CORS configured: {headers.get('Access-Control-Allow-Origin')}", response.status_code)
+            if "access-control-allow-origin" in response_headers or "Access-Control-Allow-Origin" in response_headers:
+                cors_origin = response_headers.get('access-control-allow-origin') or response_headers.get('Access-Control-Allow-Origin')
+                self.log_result("CORS Headers", True, f"CORS configured: {cors_origin}", response.status_code)
             else:
-                # Some servers don't respond to OPTIONS, try a GET request
-                response = requests.get(f"{API_BASE}/", timeout=10)
-                headers = response.headers
-                if "Access-Control-Allow-Origin" in headers:
-                    self.log_result("CORS Headers", True, f"CORS configured: {headers.get('Access-Control-Allow-Origin')}", response.status_code)
-                else:
-                    self.log_result("CORS Headers", False, "CORS headers not found", response.status_code)
+                self.log_result("CORS Headers", False, "CORS headers not found", response.status_code)
                     
         except requests.exceptions.RequestException as e:
             self.log_result("CORS Headers", False, f"CORS test failed: {str(e)}")
