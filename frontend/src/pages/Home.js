@@ -82,14 +82,6 @@ const Home = () => {
               </Card>
             </div>
             
-            <div className="text-center">
-              <Link to="/menu">
-                <Button className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white px-12 py-6 text-xl font-bold rounded-xl shadow-2xl shadow-red-600/50 transform hover:scale-105 transition-all duration-300">
-                  Découvrir notre menu complet
-                  <ArrowRight className="ml-3" size={24} />
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
