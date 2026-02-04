@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -11,6 +11,21 @@ import Contact from './pages/Contact';
 import Application from './pages/Application';
 import MentionsLegales from './pages/MentionsLegales';
 import CGV from './pages/CGV';
+
+function Layout({ children }) {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  return (
+    <>
+      <SEO />
+      {!isHomePage && <Header />}
+      {children}
+      <Footer />
+      <ScrollToTop />
+    </>
+  );
+}
 
 function App() {
   // Ajouter les animations au scroll
@@ -39,18 +54,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <SEO />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/application" element={<Application />} />
-          <Route path="/mentions-legales" element={<MentionsLegales />} />
-          <Route path="/cgv" element={<CGV />} />
-        </Routes>
-        <Footer />
-        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/application" element={<Application />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/cgv" element={<CGV />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
     </div>
   );
