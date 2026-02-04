@@ -48,22 +48,53 @@ const HeroFullscreen = () => {
           '-=0.4'
         );
 
-      // Animation au scroll
-      const scrollTl = gsap.timeline({
+      // Animation simple au scroll (sans pin)
+      gsap.to(headline, {
         scrollTrigger: {
           trigger: section,
           start: 'top top',
-          end: '+=100%',
-          pin: true,
+          end: 'bottom top',
           scrub: 1,
-        }
+        },
+        y: -100,
+        opacity: 0.3,
+        ease: 'none'
       });
 
-      scrollTl
-        .to(headline, { x: '-30vw', opacity: 0, ease: 'power2.in' }, 0)
-        .to(subhead, { x: '-20vw', opacity: 0, ease: 'power2.in' }, 0.1)
-        .to(cta, { y: '15vh', opacity: 0, ease: 'power2.in' }, 0.15)
-        .to(bg, { scale: 1.15, ease: 'none' }, 0);
+      gsap.to(subhead, {
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+        y: -80,
+        opacity: 0.3,
+        ease: 'none'
+      });
+
+      gsap.to(cta, {
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+        y: -50,
+        opacity: 0,
+        ease: 'none'
+      });
+
+      gsap.to(bg, {
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+        scale: 1.2,
+        ease: 'none'
+      });
 
     }, section);
 
