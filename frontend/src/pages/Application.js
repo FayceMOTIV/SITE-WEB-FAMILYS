@@ -189,6 +189,15 @@ const Application = () => {
               <p className="text-gray-200 text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">
                 Plus tu commandes, plus tu économises. C'est automatique !
               </p>
+              
+              {/* Screenshot de la vraie carte de fidélité */}
+              <div className="mt-8 flex justify-center">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/hi9ffu86_IMG_1585.PNG"
+                  alt="Carte de fidélité Le Family's"
+                  className="h-80 md:h-96 w-auto rounded-2xl shadow-2xl"
+                />
+              </div>
             </div>
 
             {/* Comment ça marche */}
