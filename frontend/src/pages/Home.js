@@ -117,7 +117,7 @@ const Home = () => {
         backgroundImage: "url('https://images.pexels.com/photos/35566545/pexels-photo-35566545.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
+        backgroundColor: "#7c2d12"
       }}>
         {/* Overlay réduit */}
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/75 to-amber-950/80"></div>
