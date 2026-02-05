@@ -133,7 +133,7 @@ const HeroFullscreen = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
               alt="Le Family's" 
-              className="h-16 md:h-20 w-auto drop-shadow-2xl"
+              className="h-48 md:h-60 w-auto drop-shadow-2xl"
             />
           </div>
           <nav className="hidden md:flex gap-8">
