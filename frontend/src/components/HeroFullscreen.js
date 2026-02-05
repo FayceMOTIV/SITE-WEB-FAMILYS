@@ -117,7 +117,8 @@ const HeroFullscreen = () => {
           src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODQyNDA2Mnww&ixlib=rb-4.1.0&q=85"
           alt="Le Family's Burger"
           className="w-full h-full object-cover"
-          style={{ objectPosition: 'center' }}
+          loading="eager"
+          style={{ objectPosition: 'center', backgroundColor: '#7c2d12' }}
         />
         {/* Effet vignette */}
         <div className="absolute inset-0 bg-radial-vignette" />
