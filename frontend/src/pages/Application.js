@@ -265,6 +265,51 @@ const Application = () => {
       <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-red-900 to-orange-900 animate-on-scroll">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            
+            {/* Section Menu de l'app avec screenshots */}
+            <div className="mb-16 sm:mb-20">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
+                  Nos <span className="text-orange-400">Menus</span> dans l'App
+                </h2>
+                <p className="text-gray-200 text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">
+                  Commande tous tes plats préférés directement depuis ton téléphone
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/5ddf4z7c_IMG_1587.PNG"
+                    alt="Menu Bowls"
+                    className="w-full h-auto rounded-2xl shadow-2xl mb-4 transform hover:scale-105 transition-transform duration-300"
+                  />
+                  <h3 className="text-white font-bold text-xl">Bowls & Riz Crousty</h3>
+                  <p className="text-gray-300">Découvre nos bowl V1, V2, V3, V4</p>
+                </div>
+                
+                <div className="text-center">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/4evc79vh_IMG_1588.PNG"
+                    alt="Menu Burgers Classic"
+                    className="w-full h-auto rounded-2xl shadow-2xl mb-4 transform hover:scale-105 transition-transform duration-300"
+                  />
+                  <h3 className="text-white font-bold text-xl">Burgers Classic</h3>
+                  <p className="text-gray-300">Le Bleu, Classic, Double, Savoyard...</p>
+                </div>
+                
+                <div className="text-center">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/4l04zlmr_IMG_1586.PNG"
+                    alt="Menu Burgers Top ventes"
+                    className="w-full h-auto rounded-2xl shadow-2xl mb-4 transform hover:scale-105 transition-transform duration-300"
+                  />
+                  <h3 className="text-white font-bold text-xl">Top Ventes & Kids</h3>
+                  <p className="text-gray-300">Cheese Burger, Kid Burger et + encore</p>
+                </div>
+              </div>
+            </div>
+
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
                 Pourquoi <span className="text-orange-400">télécharger</span> l'app ?
