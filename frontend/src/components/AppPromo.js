@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, CreditCard, Gift, Star, Download, Apple } from 'lucide-react';
+import { CreditCard, Gift, Star, Download, Apple, Smartphone } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { restaurantInfo } from '../data/mock';
 
@@ -18,53 +18,46 @@ const AppPromo = () => {
             </p>
           </div>
 
-          {/* Section principale avec image et avantages */}
+          {/* Section principale avec VRAIES images de l'app */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
-            {/* Illustration téléphone */}
+            {/* Vraies captures d'écran de l'app */}
             <div className="relative">
-              <Card className="bg-gradient-to-br from-orange-500 to-red-600 border-orange-400/30 overflow-hidden">
-                <CardContent className="p-8 sm:p-12 lg:p-16">
-                  <div className="relative">
-                    {/* Mockup téléphone */}
-                    <div className="bg-gray-900 rounded-3xl p-3 sm:p-4 shadow-2xl transform hover:scale-105 transition-transform duration-300 mx-auto max-w-xs">
-                      <div className="bg-white rounded-2xl overflow-hidden">
-                        {/* Écran du téléphone */}
-                        <div className="bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 p-4 sm:p-6 aspect-[9/16]">
-                          <div className="text-center">
-                            <img 
-                              src="/images/logo-familys.png" 
-                              alt="Family's App" 
-                              className="w-20 sm:w-24 h-auto mx-auto mb-4"
-                            />
-                            <h3 className="text-white font-bold text-lg sm:text-xl mb-2">Le Family's</h3>
-                            <p className="text-orange-300 text-xs sm:text-sm mb-4">Votre fast-food préféré</p>
-                            
-                            {/* Carte de fidélité dans l'app */}
-                            <div className="bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl p-3 sm:p-4 shadow-lg mb-4">
-                              <div className="flex items-center justify-between mb-2">
-                                <CreditCard className="text-white" size={20} />
-                                <Star className="text-yellow-300" size={20} />
-                              </div>
-                              <p className="text-white font-bold text-sm">Carte de fidélité</p>
-                              <p className="text-amber-100 text-xs mt-1">Remise: 5%</p>
-                            </div>
-                            
-                            {/* Bouton commande simulé */}
-                            <button className="w-full bg-orange-500 text-white font-bold py-2 sm:py-3 rounded-lg text-sm sm:text-base">
-                              Commander maintenant
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Badge promotionnel */}
-                    <div className="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-full shadow-lg transform rotate-12 text-sm sm:text-base">
-                      5% de remise !
-                    </div>
+              <div className="grid grid-cols-2 gap-4">
+                {/* Screenshot 1 - Carte fidélité */}
+                <div className="relative group">
+                  <div className="bg-gray-900 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+                    <img 
+                      src="/images/app-fidelite.webp"
+                      alt="App Family's - Carte de fidélité"
+                      className="w-full h-auto rounded-2xl"
+                      loading="lazy"
+                    />
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg whitespace-nowrap">
+                    Carte Fidélité
+                  </div>
+                </div>
+                
+                {/* Screenshot 2 - Surprise du jour */}
+                <div className="relative group mt-8">
+                  <div className="bg-gray-900 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+                    <img 
+                      src="/images/app-surprise.webp"
+                      alt="App Family's - Jeux et surprises"
+                      className="w-full h-auto rounded-2xl"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg whitespace-nowrap">
+                    Jeux & Cadeaux
+                  </div>
+                </div>
+              </div>
+              
+              {/* Badge promotionnel */}
+              <div className="absolute -top-4 right-0 bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-full shadow-lg transform rotate-12 text-sm sm:text-base z-10">
+                5% de remise !
+              </div>
             </div>
 
             {/* Avantages */}
@@ -92,9 +85,9 @@ const AppPromo = () => {
                       <Gift className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Offres exclusives</h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Jeux et surprises</h3>
                       <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        Recevez des promotions réservées uniquement aux utilisateurs de l'application mobile
+                        Jouez à la roue de la fortune et gagnez des cadeaux chaque jour sur l'application !
                       </p>
                     </div>
                   </div>
@@ -124,9 +117,9 @@ const AppPromo = () => {
                       <Star className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Historique des commandes</h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Offres exclusives</h3>
                       <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        Retrouvez vos plats préférés et recommandez en un instant vos menus favoris
+                        Recevez des promotions réservées uniquement aux utilisateurs de l'application
                       </p>
                     </div>
                   </div>
