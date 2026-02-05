@@ -6,8 +6,13 @@ const CGV = () => {
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-44 pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 text-center">
-          Conditions Générales <span className="text-orange-400">de Vente</span>
+          Conditions Générales de Vente
         </h1>
+
+        <div className="mb-8 text-center">
+          <p className="text-orange-400 text-lg font-semibold">Le Family's</p>
+          <p className="text-gray-300">59 rue du 14 juillet 1789, 01000 Bourg-en-Bresse</p>
+        </div>
 
         <Card className="bg-white/10 backdrop-blur-sm border-white/20 mb-8">
           <CardContent className="p-6 sm:p-8 text-white">
