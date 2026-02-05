@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+                src="/images/logo-familys.png" 
                 alt="Family's Logo" 
                 className="h-36 sm:h-40 md:h-48 w-auto"
               />
