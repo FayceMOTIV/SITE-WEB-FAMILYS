@@ -402,6 +402,142 @@ const Application = () => {
         </div>
       </section>
 
+      {/* Section Mise à Jour Février 2026 - NOUVELLE */}
+      <section className="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 overflow-hidden">
+        {/* Effet de particules animées */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-pink-500 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            {/* Badge "Bientôt" */}
+            <div className="flex justify-center mb-8">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-full shadow-lg">
+                <Sparkles className="text-white animate-spin" size={24} style={{ animationDuration: '3s' }} />
+                <span className="text-white font-bold text-lg uppercase tracking-widest">Bientôt Disponible</span>
+                <Sparkles className="text-white animate-spin" size={24} style={{ animationDuration: '3s', animationDirection: 'reverse' }} />
+              </div>
+            </div>
+
+            <div className="text-center mb-12">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 animate-pulse">
+                  Nouvelle Version
+                </span>
+                <br />
+                <span className="text-white">Février 2026</span>
+              </h2>
+              <p className="text-xl sm:text-2xl lg:text-3xl text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                Préparez-vous à vivre une expérience encore plus incroyable ! 🚀
+              </p>
+            </div>
+
+            {/* Grille des nouvelles fonctionnalités */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {/* Feature 1 */}
+              <Card className="bg-white/10 backdrop-blur-lg border-cyan-400/30 hover:bg-white/20 hover:border-cyan-400/60 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Zap className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">Mode Ultra Rapide</h3>
+                  <p className="text-cyan-100">
+                    Commande tes plats favoris en 3 clics chrono ! ⚡
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Feature 2 */}
+              <Card className="bg-white/10 backdrop-blur-lg border-purple-400/30 hover:bg-white/20 hover:border-purple-400/60 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Trophy className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">Nouveaux Jeux</h3>
+                  <p className="text-purple-100">
+                    Encore + de mini-jeux pour gagner des cadeaux 🎮
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Feature 3 */}
+              <Card className="bg-white/10 backdrop-blur-lg border-pink-400/30 hover:bg-white/20 hover:border-pink-400/60 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Gift className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">Récompenses Boost</h3>
+                  <p className="text-pink-100">
+                    Programme fidélité amélioré avec bonus surprise 🎁
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Feature 4 */}
+              <Card className="bg-white/10 backdrop-blur-lg border-green-400/30 hover:bg-white/20 hover:border-green-400/60 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Heart className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">Favoris Perso</h3>
+                  <p className="text-green-100">
+                    Crée et sauvegarde tes combos de ouf 💚
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Feature 5 */}
+              <Card className="bg-white/10 backdrop-blur-lg border-yellow-400/30 hover:bg-white/20 hover:border-yellow-400/60 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Star className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">Interface Revue</h3>
+                  <p className="text-yellow-100">
+                    Design encore + moderne et fluide ✨
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Feature 6 */}
+              <Card className="bg-white/10 backdrop-blur-lg border-orange-400/30 hover:bg-white/20 hover:border-orange-400/60 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Bell className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">Notifs Smart</h3>
+                  <p className="text-orange-100">
+                    Sois alerté des offres flash en temps réel 🔔
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Countdown teaser */}
+            <div className="text-center">
+              <Card className="bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 border-0 shadow-2xl">
+                <CardContent className="p-8 sm:p-12">
+                  <p className="text-white text-2xl sm:text-3xl lg:text-4xl font-black mb-4">
+                    📅 FÉVRIER 2026
+                  </p>
+                  <p className="text-white/90 text-lg sm:text-xl mb-6">
+                    La mise à jour la plus dingue de l'histoire de Le Family's !
+                  </p>
+                  <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm px-8 py-4 rounded-full">
+                    <Sparkles className="text-yellow-300" size={24} />
+                    <span className="text-white font-bold text-lg">Reste connecté pour ne rien rater</span>
+                    <Sparkles className="text-yellow-300" size={24} />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Final */}
       <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-orange-900 to-red-950 animate-on-scroll overflow-hidden" style={{
         backgroundImage: "url('https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
