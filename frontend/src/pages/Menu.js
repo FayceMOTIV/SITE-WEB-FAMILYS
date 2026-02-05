@@ -15,43 +15,43 @@ const Menu = () => {
   const menuImages = [
     {
       id: 1,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/i1q35wil_1.png',
+      url: '/images/menu-1.webp',
       title: 'Burgers Classic',
       description: 'Nos burgers signature avec promotion -50%'
     },
     {
       id: 2,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/1y0pzk2i_5.png',
+      url: '/images/menu-5.webp',
       title: 'Burgers Deluxe',
       description: 'Collection premium de burgers gourmands'
     },
     {
       id: 3,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/9qx8ah10_8.png',
+      url: '/images/menu-8.webp',
       title: 'Tacos',
       description: 'Tacos Classic et Deluxe personnalisables'
     },
     {
       id: 4,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4o2992pu_9.png',
+      url: '/images/menu-9.webp',
       title: 'Desserts',
       description: 'Sundaes, milkshakes et douceurs maison'
     },
     {
       id: 5,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/vk569wuv_11.png',
+      url: '/images/menu-11.webp',
       title: 'Accompagnements & Salades',
       description: 'Tex Mex, Menu Kid, Salades fraîches'
     },
     {
       id: 6,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/ef1uz5w2_12.png',
+      url: '/images/menu-12.webp',
       title: 'Spécialités',
       description: 'Bowls et créations spéciales'
     },
     {
       id: 7,
-      url: 'https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/fcmz0rer_13.png',
+      url: '/images/menu-13.webp',
       title: 'Menu Complet',
       description: 'Personnalisez votre repas'
     }
