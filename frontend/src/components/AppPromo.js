@@ -32,7 +32,7 @@ const AppPromo = () => {
                         <div className="bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 p-4 sm:p-6 aspect-[9/16]">
                           <div className="text-center">
                             <img 
-                              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+                              src="/images/logo-familys.png" 
                               alt="Family's App" 
                               className="w-20 sm:w-24 h-auto mx-auto mb-4"
                             />
