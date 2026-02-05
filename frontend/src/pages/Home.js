@@ -84,8 +84,8 @@ const Home = () => {
         backgroundPosition: "center",
         backgroundBlendMode: "overlay"
       }}>
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-orange-900/90 to-red-950/90"></div>
+        {/* Overlay réduit */}
+        <div className="absolute inset-0 bg-gradient-to-b from-orange-900/75 to-red-950/80"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
