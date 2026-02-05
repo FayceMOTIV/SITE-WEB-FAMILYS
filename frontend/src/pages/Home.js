@@ -82,7 +82,7 @@ const Home = () => {
         backgroundImage: "url('https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
+        backgroundColor: "#7c2d12"
       }}>
         {/* Overlay réduit */}
         <div className="absolute inset-0 bg-gradient-to-b from-orange-900/75 to-red-950/80"></div>
