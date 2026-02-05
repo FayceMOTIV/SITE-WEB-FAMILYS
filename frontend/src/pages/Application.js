@@ -17,7 +17,7 @@ const Application = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-orange-400 to-red-500 rounded-full mb-6 sm:mb-8 shadow-2xl animate-bounce">
               <Smartphone className="text-white" size={40} />
             </div>
@@ -29,6 +29,25 @@ const Application = () => {
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-200 mb-8 leading-relaxed">
               L'app qui transforme chaque commande en moment fun
             </p>
+
+            {/* Screenshots de la vraie app en carousel */}
+            <div className="mb-8 flex justify-center gap-4 overflow-x-auto pb-4">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/hi9ffu86_IMG_1585.PNG"
+                alt="App Family's - Accueil"
+                className="h-96 md:h-[500px] w-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              />
+              <img 
+                src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/wbv2o4mb_IMG_1589.PNG"
+                alt="App Family's - Roue de la Fortune"
+                className="h-96 md:h-[500px] w-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              />
+              <img 
+                src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/5ddf4z7c_IMG_1587.PNG"
+                alt="App Family's - Menu Bowls"
+                className="h-96 md:h-[500px] w-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300 hidden md:block"
+              />
+            </div>
 
             {/* 3 bullet points clés */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 sm:mb-12">
