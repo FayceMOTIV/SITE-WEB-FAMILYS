@@ -37,9 +37,9 @@ const Home = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 px-2 sm:px-0">
               <Card className="bg-gradient-to-br from-red-600 to-orange-500 border-0 overflow-hidden group hover:shadow-2xl hover:shadow-red-500/50 transition-all duration-300">
-                <CardContent className="p-6 sm:p-8 text-white">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Un lieu spacieux et accueillant</h3>
-                  <p className="text-white/90 leading-relaxed text-sm sm:text-base">
+                <CardContent className="p-4 xs:p-5 sm:p-6 md:p-8 text-white">
+                  <h3 className="text-lg xs:text-xl sm:text-2xl font-bold mb-2 xs:mb-3 sm:mb-4">Un lieu spacieux et accueillant</h3>
+                  <p className="text-white/90 leading-relaxed text-xs xs:text-sm sm:text-base">
                     Avec ses 250 m² de salle chaleureusement décorée et une terrasse ensoleillée de 60 m², le Family's vous reçoit dans une ambiance détendue, idéale pour un déjeuner en semaine ou un dîner festif le week-end.
                   </p>
                 </CardContent>
