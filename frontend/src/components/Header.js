@@ -68,9 +68,11 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white hover:text-red-500 transition-colors duration-300"
+            className="md:hidden text-white hover:text-orange-400 transition-colors duration-300 p-2 z-50 relative"
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            {isMenuOpen ? <X size={32} strokeWidth={2.5} /> : <Menu size={32} strokeWidth={2.5} />}
           </button>
         </div>
 
