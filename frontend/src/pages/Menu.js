@@ -194,29 +194,29 @@ const Menu = () => {
                       />
                       
                       {/* Zoom Icon Overlay */}
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl pointer-events-none">
-                        <div className="bg-white/90 p-4 rounded-full">
-                          <Maximize2 className="text-orange-600" size={32} />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl pointer-events-none z-10">
+                        <div className="bg-white/90 p-4 rounded-full pointer-events-none">
+                          <Maximize2 className="text-orange-600 pointer-events-none" size={32} />
                         </div>
-                        <p className="absolute bottom-4 text-white font-bold text-lg drop-shadow-lg">Cliquez pour agrandir</p>
+                        <p className="absolute bottom-4 text-white font-bold text-lg drop-shadow-lg pointer-events-none">Cliquez pour agrandir</p>
                       </div>
                       
                       {/* Overlay Gradient on Hover */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
                       
                       {/* Info Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">
+                      <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 pointer-events-none">
+                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg pointer-events-none">
                           {menu.title}
                         </h3>
-                        <p className="text-gray-200 text-lg drop-shadow-md">
+                        <p className="text-gray-200 text-lg drop-shadow-md pointer-events-none">
                           {menu.description}
                         </p>
                       </div>
 
                       {/* Glow Effect */}
-                      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute inset-0 rounded-2xl shadow-[0_0_50px_rgba(251,146,60,0.5)]"></div>
+                      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0">
+                        <div className="absolute inset-0 rounded-2xl shadow-[0_0_50px_rgba(251,146,60,0.5)] pointer-events-none"></div>
                       </div>
                     </div>
 
