@@ -18,7 +18,7 @@ const Home = () => {
 
       {/* About Section */}
       <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
+        backgroundImage: "url('/images/about-burger.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundColor: "#7c2d12"
