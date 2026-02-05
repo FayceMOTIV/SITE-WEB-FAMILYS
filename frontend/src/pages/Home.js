@@ -114,7 +114,7 @@ const Home = () => {
 
       {/* Reviews Section */}
       <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.pexels.com/photos/35566545/pexels-photo-35566545.jpeg')",
+        backgroundImage: "url('/images/reviews-bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundColor: "#7c2d12"
