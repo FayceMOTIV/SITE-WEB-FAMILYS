@@ -23,7 +23,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group">
             <img 
-              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+              src="/images/logo-familys.png" 
               alt="Family's Logo" 
               className="h-24 sm:h-32 md:h-36 lg:h-40 w-auto transform group-hover:scale-110 transition-all duration-300 drop-shadow-lg"
             />
