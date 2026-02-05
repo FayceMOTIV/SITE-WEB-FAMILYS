@@ -21,7 +21,7 @@ const Home = () => {
         backgroundImage: "url('https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
+        backgroundColor: "#7c2d12"
       }}>
         {/* Overlay réduit pour voir le burger */}
         <div className="absolute inset-0 bg-gradient-to-b from-amber-950/70 to-orange-900/75"></div>
