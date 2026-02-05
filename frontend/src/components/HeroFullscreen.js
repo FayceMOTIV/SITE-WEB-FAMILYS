@@ -131,7 +131,7 @@ const HeroFullscreen = () => {
         <header className="flex justify-between items-start">
           <div>
             <img 
-              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
+              src="/images/logo-familys.png" 
               alt="Le Family's" 
               className="h-48 md:h-60 w-auto drop-shadow-2xl"
             />
