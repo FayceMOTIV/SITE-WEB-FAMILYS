@@ -23,8 +23,8 @@ const Home = () => {
         backgroundPosition: "center",
         backgroundBlendMode: "overlay"
       }}>
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-amber-950/85 to-orange-900/85"></div>
+        {/* Overlay réduit pour voir le burger */}
+        <div className="absolute inset-0 bg-gradient-to-b from-amber-950/70 to-orange-900/75"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
