@@ -79,7 +79,7 @@ const Home = () => {
 
       {/* Why Choose Us Section */}
       <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
+        backgroundImage: "url('/images/why-burger.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundColor: "#7c2d12"
