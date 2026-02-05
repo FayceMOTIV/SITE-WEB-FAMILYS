@@ -27,7 +27,7 @@ const Application = () => {
             <div className="mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               <div className="bg-gray-800/30 rounded-2xl p-2">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/hi9ffu86_IMG_1585.PNG"
+                  src="/images/app-fidelite.webp"
                   alt="App Family's - Accueil"
                   className="w-full h-auto rounded-xl shadow-2xl"
                   loading="lazy"
@@ -37,7 +37,7 @@ const Application = () => {
               </div>
               <div className="bg-gray-800/30 rounded-2xl p-2">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/wbv2o4mb_IMG_1589.PNG"
+                  src="/images/app-surprise.webp"
                   alt="App Family's - Roue de la Fortune"
                   className="w-full h-auto rounded-xl shadow-2xl"
                   loading="lazy"
@@ -47,7 +47,7 @@ const Application = () => {
               </div>
               <div className="bg-gray-800/30 rounded-2xl p-2 hidden lg:block">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/5ddf4z7c_IMG_1587.PNG"
+                  src="/images/app-menu.webp"
                   alt="App Family's - Menu"
                   className="w-full h-auto rounded-xl shadow-2xl"
                   loading="lazy"
