@@ -1,0 +1,89 @@
+{
+  "summary": "Frontend testing completed for Le Family's restaurant site. No visible Emergent branding on any page (home, menu, application, contact, footer). Page title is correct 'LE FAMILY'S'. WebP images load correctly. Mobile responsive (375px) works without visual gaps. Commander and Uber Eats buttons functional. HOWEVER, critical issues found in source code that need fixing for 100% proprietary site.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [],
+    "code_issues": [
+      {
+        "file": "/app/frontend/public/index.html",
+        "issue": "Contains Emergent tracking scripts (rrweb and posthog) - lines 16-17 and 22-88",
+        "priority": "CRITICAL",
+        "details": "Scripts: rrweb@latest, rrweb-recorder-20250919-1.js, posthog analytics. These must be removed for 100% proprietary site."
+      },
+      {
+        "file": "/app/frontend/src/components/HeroFullscreen.js",
+        "issue": "Logo uses Emergent CDN URL: customer-assets.emergentagent.com",
+        "priority": "HIGH",
+        "details": "Line 134: Logo src uses https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png"
+      },
+      {
+        "file": "/app/frontend/src/components/Header.js",
+        "issue": "Logo uses Emergent CDN URL: customer-assets.emergentagent.com",
+        "priority": "HIGH",
+        "details": "Line 26: Logo src uses https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png"
+      },
+      {
+        "file": "/app/frontend/src/components/Footer.js",
+        "issue": "Logo uses Emergent CDN URL: customer-assets.emergentagent.com",
+        "priority": "HIGH",
+        "details": "Line 15: Logo src uses https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png"
+      },
+      {
+        "file": "/app/frontend/src/pages/Menu.js",
+        "issue": "7 menu images use Emergent CDN URLs",
+        "priority": "HIGH",
+        "details": "Menu carousel images hosted on customer-assets.emergentagent.com"
+      },
+      {
+        "file": "/app/frontend/src/pages/Application.js",
+        "issue": "3 app screenshots use Emergent CDN URLs",
+        "priority": "HIGH",
+        "details": "App screenshots hosted on customer-assets.emergentagent.com"
+      }
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "CRITICAL: Remove rrweb and posthog scripts from /app/frontend/public/index.html (lines 16-17 and 22-88)",
+    "HIGH: Download logo from Emergent CDN and save locally to /app/frontend/public/images/logo-familys.png, then update HeroFullscreen.js, Header.js, Footer.js",
+    "HIGH: Download 7 menu images from Emergent CDN and save locally, then update Menu.js",
+    "HIGH: Download 3 app screenshots from Emergent CDN and save locally, then update Application.js",
+    "Note: All images should be optimized to WebP format < 300KB for consistency"
+  ],
+  "critical_code_review_comments": [
+    "index.html contains Emergent tracking scripts that will track user sessions - MUST be removed for proprietary site",
+    "15 image URLs reference customer-assets.emergentagent.com CDN - these will break if Emergent removes access",
+    "For production on Hostinger, all assets must be self-hosted"
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A - frontend only testing",
+    "frontend": "100% visual (no visible branding), 0% code (tracking scripts and CDN URLs still present)"
+  },
+  "test_credentials": "",
+  "seed_data_creation": "",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Visual testing passed - no Emergent branding visible to users. Code-level issues remain: tracking scripts in index.html and 15 images hosted on Emergent CDN. Main agent needs to: 1) Remove tracking scripts, 2) Download and self-host all images from Emergent CDN.",
+  "verified_features": {
+    "page_title": "PASS - 'LE FAMILY'S - Restaurant Burgers & Tacos à Bourg-en-Bresse'",
+    "no_visible_emergent_branding": "PASS - No Emergent text/badge visible on any page",
+    "webp_images_loading": "PASS - hero-burger.webp, about-burger.webp, why-burger.webp, reviews-bg.webp all load correctly",
+    "mobile_responsive_375px": "PASS - No visual gaps, hero fills screen",
+    "commander_button": "PASS - Links to https://familys.commandes.io/home/places",
+    "uber_eats_button": "PASS - Links to https://www.ubereats.com/store/familys/...",
+    "application_page": "PASS - Loads correctly with App Store/Google Play buttons",
+    "htaccess_config": "PASS - Configured for 1 year cache on static assets"
+  },
+  "webp_image_sizes": {
+    "hero-burger.webp": "168KB (< 300KB OK)",
+    "about-burger.webp": "108KB (< 300KB OK)",
+    "why-burger.webp": "136KB (< 300KB OK)",
+    "reviews-bg.webp": "100KB (< 300KB OK)"
+  }
+}

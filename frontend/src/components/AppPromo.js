@@ -18,7 +18,7 @@ const AppPromo = () => {
             </p>
           </div>
 
-          {/* Section principale avec image et avantages */}
+          {/* Section principale avec VRAIES images de l'app */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
             {/* Screenshots réels de l'app */}
             <div className="relative flex justify-center gap-4">
@@ -64,9 +64,9 @@ const AppPromo = () => {
                       <Gift className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Offres exclusives</h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Jeux et surprises</h3>
                       <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        Recevez des promotions réservées uniquement aux utilisateurs de l'application mobile
+                        Jouez à la roue de la fortune et gagnez des cadeaux chaque jour sur l'application !
                       </p>
                     </div>
                   </div>
@@ -96,9 +96,9 @@ const AppPromo = () => {
                       <Star className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Historique des commandes</h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Offres exclusives</h3>
                       <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        Retrouvez vos plats préférés et recommandez en un instant vos menus favoris
+                        Recevez des promotions réservées uniquement aux utilisateurs de l'application
                       </p>
                     </div>
                   </div>
