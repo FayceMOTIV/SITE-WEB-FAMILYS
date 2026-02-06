@@ -8,7 +8,7 @@ const SEO = ({ title, description, image, type = 'website' }) => {
 
   const defaultTitle = "LE FAMILY'S - Restaurant Burgers & Tacos à Bourg-en-Bresse";
   const defaultDescription = "Restaurant fast food premium à Bourg-en-Bresse. Burgers artisanaux, tacos savoureux, desserts gourmands. Commandez en ligne ou sur Uber Eats. Note Google 4.3★";
-  const defaultImage = "https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png";
+  const defaultImage = "/images/logo-familys.png";
 
   const metaTitle = title || defaultTitle;
   const metaDescription = description || defaultDescription;

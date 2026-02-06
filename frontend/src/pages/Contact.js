@@ -5,7 +5,7 @@ import { Card, CardContent } from '../components/ui/card';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-32 md:pt-40 pb-16">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
@@ -101,13 +101,13 @@ const Contact = () => {
           </div>
 
           {/* Map */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden h-full min-h-[600px]">
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden h-full min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]">
             <CardContent className="p-0 h-full">
               <iframe
                 title="Le Family's Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.8645234!2d5.224877!3d46.203333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b96f9e1c3a123%3A0x1234567890abcdef!2s59%20Rue%20du%2014%20Juillet%201789%2C%2001000%20Bourg-en-Bresse%2C%20France!5e0!3m2!1sen!2sfr!4v1234567890123!5m2!1sen!2sfr"
-                className="w-full h-full"
-                style={{ border: 0, minHeight: '600px' }}
+                className="w-full h-full min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]"
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -120,7 +120,7 @@ const Contact = () => {
         <Card className="bg-gray-800 border-gray-700 overflow-hidden">
           <CardContent className="p-0">
             <img
-              src="https://lefamilysbourg.com/wp-content/uploads/2025/06/IMG_6488-1024x532.webp"
+              src={`${process.env.PUBLIC_URL}/images/restaurant-interior.webp`}
               alt="Le Family's Restaurant"
               className="w-full h-96 object-cover"
             />

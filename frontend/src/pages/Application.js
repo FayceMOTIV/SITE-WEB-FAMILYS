@@ -1,19 +1,18 @@
 import React from 'react';
-import { Smartphone, CreditCard, Gift, Star, Download, Apple, Zap, Clock, Heart, TrendingUp, Trophy, Target, Percent, Bell, Sparkles, PartyPopper } from 'lucide-react';
+import { Smartphone, CreditCard, Gift, Star, Zap, Clock, Heart, Trophy, Target, Percent, Bell, Sparkles, PartyPopper } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
-import { Button } from '../components/ui/button';
 import { restaurantInfo } from '../data/mock';
 
 const Application = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-32 sm:pt-40 md:pt-44 pb-16 sm:pb-20" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
-      }}>
+      <section className="relative overflow-hidden pt-32 md:pt-40 pb-16 sm:pb-20 bg-black">
+        <img
+          src={`${process.env.PUBLIC_URL}/images/bg-burger-3.jpg`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -32,18 +31,18 @@ const Application = () => {
 
             {/* Screenshots de la vraie app en carousel */}
             <div className="mb-8 flex justify-center gap-4 overflow-x-auto pb-4">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/hi9ffu86_IMG_1585.PNG"
+              <img
+                src={`${process.env.PUBLIC_URL}/images/app-1.png`}
                 alt="App Family's - Accueil"
                 className="h-96 md:h-[500px] w-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
-              <img 
-                src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/wbv2o4mb_IMG_1589.PNG"
+              <img
+                src={`${process.env.PUBLIC_URL}/images/app-2.png`}
                 alt="App Family's - Roue de la Fortune"
                 className="h-96 md:h-[500px] w-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
-              <img 
-                src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/5ddf4z7c_IMG_1587.PNG"
+              <img
+                src={`${process.env.PUBLIC_URL}/images/app-3.png`}
                 alt="App Family's - Menu Bowls"
                 className="h-96 md:h-[500px] w-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300 hidden md:block"
               />
@@ -70,30 +69,28 @@ const Application = () => {
                 href={restaurantInfo.appLinks.ios}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto"
+                className="transform hover:scale-105 transition-all duration-300"
               >
-                <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 border-2 border-gray-700 hover:border-gray-600 text-white px-8 sm:px-12 py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300">
-                  <Apple size={32} className="mr-3" />
-                  <div className="text-left">
-                    <p className="text-xs text-gray-400">Télécharger sur</p>
-                    <p className="text-base sm:text-lg">App Store</p>
-                  </div>
-                </Button>
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/appstore-badge.svg`}
+                  alt="Télécharger sur l'App Store"
+                  className="h-14 sm:h-16 w-auto"
+                  loading="eager"
+                />
               </a>
 
               <a
                 href={restaurantInfo.appLinks.android}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto"
+                className="transform hover:scale-105 transition-all duration-300"
               >
-                <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 border-2 border-gray-700 hover:border-gray-600 text-white px-8 sm:px-12 py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300">
-                  <Download size={32} className="mr-3" />
-                  <div className="text-left">
-                    <p className="text-xs text-gray-400">Disponible sur</p>
-                    <p className="text-base sm:text-lg">Google Play</p>
-                  </div>
-                </Button>
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/googleplay-badge.png`}
+                  alt="Disponible sur Google Play"
+                  className="h-14 sm:h-16 w-auto"
+                  loading="eager"
+                />
               </a>
             </div>
           </div>
@@ -171,12 +168,12 @@ const Application = () => {
       </section>
 
       {/* Programme Fidélité */}
-      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-pink-900 to-red-900 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
-      }}>
+      <section className="relative py-16 sm:py-20 lg:py-24 bg-pink-950 animate-on-scroll overflow-hidden">
+        <img
+          src={`${process.env.PUBLIC_URL}/images/bg-burger-1.jpg`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-pink-900/90 to-red-900/90"></div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -193,7 +190,7 @@ const Application = () => {
               {/* Screenshot de la vraie carte de fidélité */}
               <div className="mt-8 flex justify-center">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/hi9ffu86_IMG_1585.PNG"
+                  src={`${process.env.PUBLIC_URL}/images/app-1.png`}
                   alt="Carte de fidélité Le Family's"
                   className="h-80 md:h-96 w-auto rounded-2xl shadow-2xl"
                 />
@@ -280,7 +277,7 @@ const Application = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/5ddf4z7c_IMG_1587.PNG"
+                    src={`${process.env.PUBLIC_URL}/images/app-3.png`}
                     alt="Menu Bowls"
                     className="w-full h-auto rounded-2xl shadow-2xl mb-4 transform hover:scale-105 transition-transform duration-300"
                   />
@@ -290,7 +287,7 @@ const Application = () => {
                 
                 <div className="text-center">
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/4evc79vh_IMG_1588.PNG"
+                    src={`${process.env.PUBLIC_URL}/images/app-4.png`}
                     alt="Menu Burgers Classic"
                     className="w-full h-auto rounded-2xl shadow-2xl mb-4 transform hover:scale-105 transition-transform duration-300"
                   />
@@ -300,7 +297,7 @@ const Application = () => {
                 
                 <div className="text-center">
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_resto-conversion/artifacts/4l04zlmr_IMG_1586.PNG"
+                    src={`${process.env.PUBLIC_URL}/images/app-5.png`}
                     alt="Menu Burgers Top ventes"
                     className="w-full h-auto rounded-2xl shadow-2xl mb-4 transform hover:scale-105 transition-transform duration-300"
                   />
@@ -539,12 +536,12 @@ const Application = () => {
       </section>
 
       {/* Call to Action Final */}
-      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-orange-900 to-red-950 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundBlendMode: "overlay"
-      }}>
+      <section className="relative py-16 sm:py-20 lg:py-24 bg-orange-950 animate-on-scroll overflow-hidden">
+        <img
+          src={`${process.env.PUBLIC_URL}/images/bg-burger-2.jpg`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-orange-900/85 to-red-950/85"></div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -556,37 +553,35 @@ const Application = () => {
                   Rejoins la famille !
                 </h2>
                 <p className="text-white text-lg sm:text-xl lg:text-2xl mb-8 sm:mb-12 max-w-2xl mx-auto">
-                  Plus de 10 000 gourmands commandent déjà depuis leur canapé 🛋️
+                  Plus de 500 gourmands commandent déjà depuis leur canapé 🛋️
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8">
                   <a
                     href={restaurantInfo.appLinks.ios}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto"
+                    className="transform hover:scale-105 transition-all duration-300"
                   >
-                    <Button className="w-full sm:w-auto bg-white text-gray-900 hover:bg-yellow-300 px-10 sm:px-12 py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300">
-                      <Apple size={32} className="mr-3" />
-                      <div className="text-left">
-                        <p className="text-xs text-gray-600">Télécharger sur</p>
-                        <p>App Store</p>
-                      </div>
-                    </Button>
+                    <img
+                      src={`${process.env.PUBLIC_URL}/images/appstore-badge.svg`}
+                      alt="Télécharger sur l'App Store"
+                      className="h-14 sm:h-16 w-auto"
+                      loading="eager"
+                    />
                   </a>
 
                   <a
                     href={restaurantInfo.appLinks.android}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto"
+                    className="transform hover:scale-105 transition-all duration-300"
                   >
-                    <Button className="w-full sm:w-auto bg-white text-gray-900 hover:bg-yellow-300 px-10 sm:px-12 py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300">
-                      <Download size={32} className="mr-3" />
-                      <div className="text-left">
-                        <p className="text-xs text-gray-600">Disponible sur</p>
-                        <p>Google Play</p>
-                      </div>
-                    </Button>
+                    <img
+                      src={`${process.env.PUBLIC_URL}/images/googleplay-badge.png`}
+                      alt="Disponible sur Google Play"
+                      className="h-14 sm:h-16 w-auto"
+                      loading="eager"
+                    />
                   </a>
                 </div>
                 <p className="text-white/90 text-lg">

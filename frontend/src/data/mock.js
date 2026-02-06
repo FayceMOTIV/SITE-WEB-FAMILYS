@@ -6,7 +6,7 @@ export const burgers = [
     name: "Le King",
     description: "Notre burger signature avec double steak haché, cheddar affiné, bacon croustillant, oignons caramélisés et sauce maison",
     price: "12.90€",
-    image: "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXJnZXJ8ZW58MHx8fHwxNzYwNDQxMjc3fDA&ixlib=rb-4.1.0&q=85",
+    image: "/images/hero-burger.jpg",
     featured: true
   },
   {
@@ -14,7 +14,7 @@ export const burgers = [
     name: "Smaan",
     description: "Burger gourmand avec steak mariné, fromage raclette fondu, champignons frais et sauce barbecue fumée",
     price: "11.90€",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2MDQwNjg5N3ww&ixlib=rb-4.1.0&q=85",
+    image: "/images/bg-burger-3.jpg",
     featured: true
   },
   {
@@ -22,7 +22,7 @@ export const burgers = [
     name: "Le Chicken Crispy",
     description: "Poulet pané croustillant, salade fraîche, tomates, oignons rouges et sauce caesar crémeuse",
     price: "10.50€",
-    image: "https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2MDQwNjg5N3ww&ixlib=rb-4.1.0&q=85",
+    image: "/images/bg-burger-2.jpg",
     featured: true
   },
   {
@@ -30,7 +30,7 @@ export const burgers = [
     name: "Le Veggie Deluxe",
     description: "Steak végétal grillé, avocat, tomates confites, roquette et sauce au basilic",
     price: "10.90€",
-    image: "https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2MDQwNjg5N3ww&ixlib=rb-4.1.0&q=85",
+    image: "/images/bg-burger-1.jpg",
     featured: true
   }
 ];

@@ -17,12 +17,13 @@ const Home = () => {
       <div className="bg-gradient-to-b from-orange-950 via-amber-950 to-red-950">
 
       {/* About Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1627378378955-a3f4e406c5de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundColor: "#7c2d12"
-      }}>
+      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden bg-amber-950">
+        {/* Image de fond */}
+        <img
+          src={`${process.env.PUBLIC_URL}/images/bg-burger-1.jpg`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Overlay réduit pour voir le burger */}
         <div className="absolute inset-0 bg-gradient-to-b from-amber-950/70 to-orange-900/75"></div>
         
@@ -78,12 +79,13 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1632898658005-af95f6fa589c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODUwMjI2Nnww&ixlib=rb-4.1.0&q=85')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundColor: "#7c2d12"
-      }}>
+      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden bg-orange-950">
+        {/* Image de fond */}
+        <img
+          src={`${process.env.PUBLIC_URL}/images/bg-burger-2.jpg`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Overlay réduit */}
         <div className="absolute inset-0 bg-gradient-to-b from-orange-900/75 to-red-950/80"></div>
         
@@ -113,12 +115,13 @@ const Home = () => {
       </section>
 
       {/* Reviews Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden" style={{
-        backgroundImage: "url('https://images.pexels.com/photos/35566545/pexels-photo-35566545.jpeg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundColor: "#7c2d12"
-      }}>
+      <section className="relative py-12 sm:py-16 md:py-20 animate-on-scroll overflow-hidden bg-red-950">
+        {/* Image de fond */}
+        <img
+          src={`${process.env.PUBLIC_URL}/images/bg-reviews.jpg`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Overlay réduit */}
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/75 to-amber-950/80"></div>
         

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Phone, MapPin } from 'lucide-react';
 import { restaurantInfo } from '../data/mock';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -104,7 +104,7 @@ const HeroFullscreen = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-screen h-screen overflow-hidden"
+      className="relative w-full min-h-screen overflow-hidden"
       style={{ margin: 0, padding: 0 }}
     >
       {/* Image de fond plein écran */}
@@ -114,7 +114,7 @@ const HeroFullscreen = () => {
         style={{ willChange: 'transform' }}
       >
         <img
-          src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyfGVufDB8fHx8MTc2ODQyNDA2Mnww&ixlib=rb-4.1.0&q=85"
+          src={`${process.env.PUBLIC_URL}/images/hero-burger.jpg`}
           alt="Le Family's Burger"
           className="w-full h-full object-cover"
           loading="eager"
@@ -126,29 +126,7 @@ const HeroFullscreen = () => {
       </div>
 
       {/* Contenu */}
-      <div className="relative z-10 w-full h-full flex flex-col justify-between p-6 md:p-12 lg:p-16">
-        {/* Header */}
-        <header className="flex justify-between items-start">
-          <div>
-            <img 
-              src="https://customer-assets.emergentagent.com/job_gourmet-burgers-23/artifacts/4euq80w9_LOGO%20FAMILYS.png" 
-              alt="Le Family's" 
-              className="h-16 md:h-20 w-auto drop-shadow-2xl"
-            />
-          </div>
-          <nav className="hidden md:flex gap-8">
-            <Link to="/menu" className="font-semibold text-sm tracking-wide text-white/80 hover:text-orange-400 transition-colors uppercase">
-              Menu
-            </Link>
-            <Link to="/application" className="font-semibold text-sm tracking-wide text-white/80 hover:text-orange-400 transition-colors uppercase">
-              Application
-            </Link>
-            <Link to="/contact" className="font-semibold text-sm tracking-wide text-white/80 hover:text-orange-400 transition-colors uppercase">
-              Contact
-            </Link>
-          </nav>
-        </header>
-
+      <div className="relative z-10 w-full h-full flex flex-col justify-between p-6 md:p-12 lg:p-16 pt-32 md:pt-40">
         {/* Contenu principal */}
         <div className="flex-1 flex flex-col justify-center max-w-6xl">
           <h1
@@ -167,7 +145,7 @@ const HeroFullscreen = () => {
           
           <p
             ref={subheadRef}
-            className="text-xl md:text-2xl lg:text-3xl text-white/90 max-w-2xl font-medium"
+            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-white/90 max-w-2xl font-medium"
             style={{ textShadow: '0 4px 16px rgba(0,0,0,0.8)' }}
           >
             Burgers artisanaux, tacos savoureux et moments gourmands à Bourg-en-Bresse

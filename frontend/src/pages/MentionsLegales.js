@@ -3,7 +3,7 @@ import { Card, CardContent } from '../components/ui/card';
 
 const MentionsLegales = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-44 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-orange-950 via-red-950 to-amber-950 pt-32 md:pt-40 pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 text-center">
           Mentions <span className="text-orange-400">Légales</span>
