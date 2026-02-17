@@ -32,6 +32,9 @@ export default function RootLayout({
             </Script>
           </>
         ) : null}
+        <div className="bg-red-600 text-white text-center py-3 px-4 text-sm font-semibold sticky top-0 z-50">
+          Attention : jusqu&apos;au 19 mars nous serons ouverts seulement le soir de 18H &agrave; Minuit
+        </div>
         {children}
       </body>
     </html>
