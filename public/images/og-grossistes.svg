@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020617"/>
+  <circle cx="220" cy="100" r="170" fill="#0EA5E9" fill-opacity="0.2"/>
+  <circle cx="1050" cy="180" r="210" fill="#2563EB" fill-opacity="0.2"/>
+  <text x="80" y="230" fill="#E2E8F0" font-family="Arial" font-size="34" font-weight="700">Face Media</text>
+  <text x="80" y="320" fill="#FFFFFF" font-family="Arial" font-size="62" font-weight="700">L'OS IA du grossiste</text>
+  <text x="80" y="390" fill="#CBD5E1" font-family="Arial" font-size="34">Devis 30s • Tournées • Réachat</text>
+  <text x="80" y="470" fill="#67E8F9" font-family="Arial" font-size="30" font-weight="700">+2 à +6 points de marge en 90 jours</text>
+</svg>

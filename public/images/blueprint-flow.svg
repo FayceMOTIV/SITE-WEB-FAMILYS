@@ -1,0 +1,19 @@
+<svg width="1400" height="380" viewBox="0 0 1400 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="380" rx="24" fill="#F8FAFC"/>
+  <g font-family="Arial" font-size="20" font-weight="700" fill="#0F172A">
+    <rect x="40" y="90" width="220" height="200" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="86" y="198">Flux entrants</text>
+    <rect x="300" y="90" width="220" height="200" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="356" y="198">Agents IA</text>
+    <rect x="560" y="90" width="240" height="200" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="612" y="198">Orchestrateur</text>
+    <rect x="840" y="90" width="220" height="200" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="900" y="198">CRM / ERP</text>
+    <rect x="1100" y="90" width="260" height="200" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="1178" y="198">Dashboard</text>
+  </g>
+  <path d="M260 190H300" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M520 190H560" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M800 190H840" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1060 190H1100" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+</svg>
